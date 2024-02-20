@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "Подольск",
+    "slug": "podolsk",
+    "address": "Подольск, ул. Клемента Готвальда, 4Б",
+    "lat": 55.42098,
+    "lng": 37.53167,
+    "img1": "sto-podolsk-1.jpeg",
+    "img2": "sto-podolsk-2.jpeg",
+    "img3": "sto-podolsk-3.jpeg",
+    "img4": "sto-podolsk-4.jpeg",
+    "tel": "+7 (499) 130-29-60 доб. 998"
+  },
+  {
+    "id": 2,
+    "name": "Москва",
+    "slug": "moskva",
+    "address": "Москва, Партийный переулок, 1, к4",
+    "lat": 55.72064,
+    "lng": 37.63451,
+    "img1": "sto-moskva-1.jpeg",
+    "img2": "sto-moskva-2.jpeg",
+    "img3": "sto-moskva-3.jpeg",
+    "img4": "sto-moskva-4.jpeg",
+    "tel": "+7 (499) 402-91-12 доб. 492"
+  }
+]

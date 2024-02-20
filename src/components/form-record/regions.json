@@ -1,0 +1,1542 @@
+[
+  {
+    "id": "192f5a7c-da8d-11e9-ae52-005056991fe0",
+    "name": "Абакан",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8422",
+    "lat": 53.71942,
+    "lng": 91.40143
+  },
+  {
+    "id": "d83db52f-0370-11ed-814f-005056872826",
+    "name": "Алматы",
+    "isDeleted": false,
+    "currencyCode": "KZT",
+    "countryCode": "KZ",
+    "phoneCode": "7182",
+    "lat": 43.299855,
+    "lng": 76.847605
+  },
+  {
+    "id": "86181221-ac74-11ee-851c-00505687f5ad",
+    "name": "Анапа",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "",
+    "lat": 44.86966,
+    "lng": 37.33261
+  },
+  {
+    "id": "2c3477d3-473d-11e6-92e8-0050569911ac",
+    "name": "Ангарск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3952",
+    "lat": 52.49709,
+    "lng": 103.84289
+  },
+  {
+    "id": "676b414f-6b15-11e9-ae51-005056871c8e",
+    "name": "Арамиль",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "209",
+    "lat": 56.69575,
+    "lng": 60.79006
+  },
+  {
+    "id": "f22e869b-6249-11e9-ae50-005056991fe0",
+    "name": "Архангельск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "818",
+    "lat": 64.52945666666666,
+    "lng": 40.59905666666667
+  },
+  {
+    "id": "e2ca5659-7ba4-11e9-ae51-005056991fe0",
+    "name": "Астана",
+    "isDeleted": false,
+    "currencyCode": "KZT",
+    "countryCode": "KZ",
+    "phoneCode": "7182",
+    "lat": 51.16418,
+    "lng": 71.48136200000002
+  },
+  {
+    "id": "d24aa259-b3bd-11eb-ae56-005056871c8e",
+    "name": "Астрахань",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "273",
+    "lat": 46.335094999999995,
+    "lng": 48.05195
+  },
+  {
+    "id": "ff6a4bca-8998-11e8-ae4a-005056991fe0",
+    "name": "Ачинск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "224",
+    "lat": 56.2469,
+    "lng": 90.48559
+  },
+  {
+    "id": "f07a89ca-aa77-11e8-ae4c-005056991fe0",
+    "name": "Балаково",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "221",
+    "lat": 52.02908,
+    "lng": 47.81534499999999
+  },
+  {
+    "id": "ca6629f3-b964-11e7-ae44-005056991fe0",
+    "name": "Балашиха",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.771609999999995,
+    "lng": 37.996095
+  },
+  {
+    "id": "f301560b-fbda-11e6-a97d-0050569911ac",
+    "name": "Барабинск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "201",
+    "lat": 55.3477,
+    "lng": 78.3405
+  },
+  {
+    "id": "23f93799-59c4-11e4-a686-0050569934c7",
+    "name": "Барнаул",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3852",
+    "lat": 53.35290750000001,
+    "lng": 83.69473125
+  },
+  {
+    "id": "e73a5aa7-a0da-11e7-ae44-005056991fe0",
+    "name": "Белгород",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4722",
+    "lat": 50.58573,
+    "lng": 36.62463
+  },
+  {
+    "id": "a45dcdee-e7d1-11e9-ae53-005056871c8e",
+    "name": "Белово",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "252",
+    "lat": 54.43288,
+    "lng": 86.30332
+  },
+  {
+    "id": "75b9031c-b4c2-11ec-814f-005056872826",
+    "name": "Белореченск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "86155",
+    "lat": 44.76921,
+    "lng": 39.86091
+  },
+  {
+    "id": "cb2dba9d-aae8-11e6-8182-0050569911ac",
+    "name": "Бердск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "383",
+    "lat": 54.76031,
+    "lng": 83.11554
+  },
+  {
+    "id": "b7a24041-0bad-11e8-ae47-005056991fe0",
+    "name": "Бийск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3854",
+    "lat": 52.53602,
+    "lng": 85.23028
+  },
+  {
+    "id": "19b7ec05-65e5-11e7-abd0-0050569911ac",
+    "name": "Биробиджан",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "42622",
+    "lat": 48.784144999999995,
+    "lng": 132.925765
+  },
+  {
+    "id": "4fdff426-dc70-11e5-84e3-0050569911ac",
+    "name": "Благовещенск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4162",
+    "lat": 50.30325,
+    "lng": 127.52989
+  },
+  {
+    "id": "0f411a99-fcf0-11e8-ae52-005056876845",
+    "name": "Большой Камень",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "207",
+    "lat": 43.12038,
+    "lng": 132.40106
+  },
+  {
+    "id": "dea390cc-740a-11e6-a0a4-0050569911ac",
+    "name": "Братск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3953",
+    "lat": 56.234425,
+    "lng": 101.67354
+  },
+  {
+    "id": "f4723bd5-e0f4-11e7-ae44-005056991fe0",
+    "name": "Брянск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4832",
+    "lat": 53.237939999999995,
+    "lng": 34.376245
+  },
+  {
+    "id": "3375f3d5-88b1-11ea-ae53-005056871c8e",
+    "name": "Великие Луки",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "253",
+    "lat": 56.33488,
+    "lng": 30.55297
+  },
+  {
+    "id": "6c798653-4e62-11ec-ae60-005056876845",
+    "name": "Великий Новгород",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8162",
+    "lat": 58.55838,
+    "lng": 31.2635
+  },
+  {
+    "id": "be0fc487-aeb5-11e5-84e3-0050569911ac",
+    "name": "Владивосток",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "423",
+    "lat": 43.15946,
+    "lng": 131.94374
+  },
+  {
+    "id": "841bbaab-f8c8-11ec-814f-005056872826",
+    "name": "Владикавказ",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8672",
+    "lat": 43.04159,
+    "lng": 44.70352
+  },
+  {
+    "id": "b6b4f165-5d85-11e9-ae51-005056871c8e",
+    "name": "Владимир",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4922",
+    "lat": 56.17057,
+    "lng": 40.39975
+  },
+  {
+    "id": "6b56ee21-f2e2-11e8-ae4c-005056991fe0",
+    "name": "Волгоград",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8442",
+    "lat": 48.750569999999996,
+    "lng": 44.508461999999994
+  },
+  {
+    "id": "0688701d-714d-11e9-ae51-005056871c8e",
+    "name": "Волгодонск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "235",
+    "lat": 47.5273,
+    "lng": 42.15486
+  },
+  {
+    "id": "f777da8f-c54b-11e8-ae4c-005056991fe0",
+    "name": "Волжский",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "220",
+    "lat": 48.76873,
+    "lng": 44.82536
+  },
+  {
+    "id": "eeec5bb9-815c-11eb-ae5f-005056876845",
+    "name": "Вологда",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "272",
+    "lat": 59.23088,
+    "lng": 39.90419
+  },
+  {
+    "id": "79b6daab-76ae-11e9-ae51-005056991fe0",
+    "name": "Воткинск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8233",
+    "lat": 57.04492,
+    "lng": 54.02125
+  },
+  {
+    "id": "52c6216b-b7ff-11ed-ae62-005056876845",
+    "name": "Выборг",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "81378",
+    "lat": 60.70249,
+    "lng": 28.78316
+  },
+  {
+    "id": "34f92ec8-5305-11ea-ae52-005056991fe0",
+    "name": "Выкса",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "247",
+    "lat": 55.34225,
+    "lng": 42.15458
+  },
+  {
+    "id": "72439bdc-a9d4-11e9-ae51-005056871c8e",
+    "name": "Геленджик",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "238",
+    "lat": 44.55377,
+    "lng": 38.12237
+  },
+  {
+    "id": "833f3a19-0456-11ea-ae53-005056871c8e",
+    "name": "Горячий Ключ",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "250",
+    "lat": 44.6373,
+    "lng": 39.11613
+  },
+  {
+    "id": "b3ac60f9-9ae1-11e8-ae4b-005056991fe0",
+    "name": "Дзержинск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8313",
+    "lat": 56.24718,
+    "lng": 43.39853
+  },
+  {
+    "id": "f408a2a7-3847-11eb-ae54-005056871c8e",
+    "name": "Динская станица",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "861",
+    "lat": 45.22917,
+    "lng": 39.22457
+  },
+  {
+    "id": "899554c3-caff-11ea-ae53-005056991fe0",
+    "name": "Долгопрудный",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.91519,
+    "lng": 37.49677
+  },
+  {
+    "id": "27a133cc-aeb6-11e5-84e3-0050569911ac",
+    "name": "Екатеринбург",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "343",
+    "lat": 56.83755,
+    "lng": 60.61575714285714
+  },
+  {
+    "id": "7c5c43a5-7f68-11e8-ae4a-005056991fe0",
+    "name": "Железногорск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "391",
+    "lat": 56.25634,
+    "lng": 93.52338
+  },
+  {
+    "id": "c7041795-f740-11ec-ae61-005056876845",
+    "name": "Жуковский",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.59276,
+    "lng": 38.09742
+  },
+  {
+    "id": "7695e5aa-50c1-11ed-ae58-005056871c8e",
+    "name": "Заводоуковск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "34542",
+    "lat": 56.4928,
+    "lng": 66.54002
+  },
+  {
+    "id": "87a87c13-4abf-11e9-ae4e-005056991fe0",
+    "name": "Зеленогорск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "226",
+    "lat": 56.06542,
+    "lng": 94.6069
+  },
+  {
+    "id": "c8b4db7c-e0e8-11e7-ae44-005056991fe0",
+    "name": "Златоуст",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "215",
+    "lat": 55.1031,
+    "lng": 59.68632
+  },
+  {
+    "id": "35ac1aa7-7524-11ec-ae60-005056876845",
+    "name": "Ивантеевка",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.96937,
+    "lng": 37.93187
+  },
+  {
+    "id": "6958b58b-4686-11e3-9765-0050569934c7",
+    "name": "Иркутск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3952",
+    "lat": 52.28567142857143,
+    "lng": 104.30111857142859
+  },
+  {
+    "id": "51992b38-ead5-11e7-ae45-005056991fe0",
+    "name": "Искитим",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "383",
+    "lat": 54.61799,
+    "lng": 83.31165
+  },
+  {
+    "id": "048346c1-74a7-11e6-b34b-0050569911ac",
+    "name": "Ишим",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3452",
+    "lat": 56.13567,
+    "lng": 69.52313
+  },
+  {
+    "id": "0f3974bb-d3a8-11ec-ae58-005056991fe0",
+    "name": "Йошкар-Ола",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8362",
+    "lat": 56.64275,
+    "lng": 47.83224
+  },
+  {
+    "id": "d75d5dc8-c29e-11e7-ae44-005056991fe0",
+    "name": "Казань",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "843",
+    "lat": 55.815909999999995,
+    "lng": 49.11695666666666
+  },
+  {
+    "id": "674f2cde-0385-11ed-814f-005056872826",
+    "name": "Калининград",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4012",
+    "lat": 54.71065,
+    "lng": 20.54572
+  },
+  {
+    "id": "d5623389-63e0-11e8-ae49-005056991fe0",
+    "name": "Калуга",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4842",
+    "lat": 54.54564333333334,
+    "lng": 36.283343333333335
+  },
+  {
+    "id": "7360b4d3-3b6b-11eb-ae54-005056991fe0",
+    "name": "Камень-на-Оби",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "259",
+    "lat": 53.78875,
+    "lng": 81.33232
+  },
+  {
+    "id": "489cba18-27ed-11eb-ae54-005056871c8e",
+    "name": "Караганда",
+    "isDeleted": false,
+    "currencyCode": "KZT",
+    "countryCode": "KZ",
+    "phoneCode": "7182",
+    "lat": 49.804985,
+    "lng": 73.09763
+  },
+  {
+    "id": "a8c078b2-c3bb-11e9-ae51-005056991fe0",
+    "name": "Карталы",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "249",
+    "lat": 53.06346,
+    "lng": 60.62784
+  },
+  {
+    "id": "3fab3500-d64d-11e6-8fc9-0050569911ac",
+    "name": "Кемерово",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3842",
+    "lat": 55.34662333333333,
+    "lng": 86.0979
+  },
+  {
+    "id": "14f603e7-f43c-11eb-ae57-005056991fe0",
+    "name": "Кингисепп",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "812",
+    "lat": 59.37061,
+    "lng": 28.62766
+  },
+  {
+    "id": "21c9f74e-e53e-11e7-ae44-005056991fe0",
+    "name": "Киров",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8332",
+    "lat": 58.58039,
+    "lng": 49.656144999999995
+  },
+  {
+    "id": "bd659fcd-64d2-11ed-ae58-005056871c8e",
+    "name": "Клин",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 56.31585,
+    "lng": 36.74616
+  },
+  {
+    "id": "aee7286f-0d72-11e8-ae47-005056991fe0",
+    "name": "Ковров",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4922",
+    "lat": 56.33692,
+    "lng": 41.33265
+  },
+  {
+    "id": "42d21f53-9ed2-11ed-ae61-005056876845",
+    "name": "Коломна",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.06916,
+    "lng": 38.75527
+  },
+  {
+    "id": "a331cbd5-c93c-11ed-ae5a-005056991fe0",
+    "name": "Комсомольск-на-Амуре",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4217",
+    "lat": 50.54762,
+    "lng": 137.0303
+  },
+  {
+    "id": "823d52b7-8b0f-11e8-ae4a-005056991fe0",
+    "name": "Королёв",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.91444,
+    "lng": 37.82873
+  },
+  {
+    "id": "b1e14bb0-c417-11eb-ae56-005056871c8e",
+    "name": "Костанай",
+    "isDeleted": false,
+    "currencyCode": "KZT",
+    "countryCode": "KZ",
+    "phoneCode": "7182",
+    "lat": 53.219750000000005,
+    "lng": 63.627235
+  },
+  {
+    "id": "5bb39230-b5e3-11ee-851e-00505687852c",
+    "name": "Красногорск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "495",
+    "lat": 0,
+    "lng": 0
+  },
+  {
+    "id": "308b0b5f-aeb5-11e5-84e3-0050569911ac",
+    "name": "Краснодар",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "861",
+    "lat": 45.06169416666666,
+    "lng": 38.99366083333333
+  },
+  {
+    "id": "decbf314-8981-11e3-a76e-0050569934c7",
+    "name": "Красноярск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "391",
+    "lat": 56.020216250000004,
+    "lng": 92.89763125
+  },
+  {
+    "id": "b82593a5-27fe-11e8-ae47-005056991fe0",
+    "name": "Куйбышев",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "217",
+    "lat": 55.45463,
+    "lng": 78.33481
+  },
+  {
+    "id": "d759a658-f765-11e7-ae45-005056991fe0",
+    "name": "Кулебаки",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "216",
+    "lat": 55.41648,
+    "lng": 42.52872
+  },
+  {
+    "id": "74ebd3f9-4d4d-11ea-ae5a-005056876845",
+    "name": "Кумертау",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "248",
+    "lat": 52.76681,
+    "lng": 55.80894
+  },
+  {
+    "id": "959db6c9-c4b1-11e5-84e3-0050569911ac",
+    "name": "Курган",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3522",
+    "lat": 55.445676666666664,
+    "lng": 65.30687666666667
+  },
+  {
+    "id": "dee3d91f-15ee-11e8-ae47-005056991fe0",
+    "name": "Ленинск-Кузнецкий",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "38456",
+    "lat": 54.6768,
+    "lng": 86.1826
+  },
+  {
+    "id": "b684c7fc-46b7-11e9-ae4e-005056991fe0",
+    "name": "Липецк",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4742",
+    "lat": 52.613545,
+    "lng": 39.55776
+  },
+  {
+    "id": "2a9997b3-d23d-11eb-ae57-005056991fe0",
+    "name": "Луга",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "274",
+    "lat": 58.7352,
+    "lng": 29.84794
+  },
+  {
+    "id": "79c49839-f3bb-11ec-ae61-005056876845",
+    "name": "Люберцы",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3522",
+    "lat": 55.690875,
+    "lng": 37.919675
+  },
+  {
+    "id": "e50c12be-20f4-11e8-ae47-005056991fe0",
+    "name": "Магнитогорск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3519",
+    "lat": 53.38894,
+    "lng": 58.98544
+  },
+  {
+    "id": "56845021-d792-11e5-84e3-0050569911ac",
+    "name": "Махачкала",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8722",
+    "lat": 42.96743,
+    "lng": 47.5323
+  },
+  {
+    "id": "5d3fab89-7a8a-11e8-ae4a-005056991fe0",
+    "name": "Междуреченск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "211",
+    "lat": 53.6939,
+    "lng": 88.03829999999999
+  },
+  {
+    "id": "94f7514e-4344-11eb-ae54-005056871c8e",
+    "name": "Мелеуз",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "34764",
+    "lat": 52.96764,
+    "lng": 55.95676
+  },
+  {
+    "id": "b05636d1-1f03-11e5-b196-0050569934c7",
+    "name": "Москва",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.73454777777778,
+    "lng": 37.553527777777774
+  },
+  {
+    "id": "3e2b8908-8ef9-11ec-814f-005056872826",
+    "name": "Мурманск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8152",
+    "lat": 68.95155,
+    "lng": 33.09622
+  },
+  {
+    "id": "416f3e9d-098b-11e9-ae4c-005056991fe0",
+    "name": "Мыски",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "231",
+    "lat": 53.7305,
+    "lng": 87.7115
+  },
+  {
+    "id": "92200407-ba76-11e9-ae51-005056871c8e",
+    "name": "Набережные Челны",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8553",
+    "lat": 55.754585,
+    "lng": 52.434735
+  },
+  {
+    "id": "8282e309-669a-11eb-ae5d-005056876845",
+    "name": "Наро-Фоминск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.37852,
+    "lng": 36.69628
+  },
+  {
+    "id": "d1aae127-c57b-11e9-ae51-005056871c8e",
+    "name": "Находка",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4236",
+    "lat": 42.827,
+    "lng": 132.85733
+  },
+  {
+    "id": "5b0e63c8-9fe8-11e5-9aef-0050569911ac",
+    "name": "Нижний Новгород",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "831",
+    "lat": 56.3358,
+    "lng": 43.91737
+  },
+  {
+    "id": "cc34ed68-d758-11e8-ae51-005056876845",
+    "name": "Нижний Тагил",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3435",
+    "lat": 57.896294999999995,
+    "lng": 59.962559999999996
+  },
+  {
+    "id": "6559dc37-f960-11ec-ae58-005056871c8e",
+    "name": "Новоалтайск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "38532",
+    "lat": 53.40823,
+    "lng": 83.92741
+  },
+  {
+    "id": "6958b576-4686-11e3-9765-0050569934c7",
+    "name": "Новокузнецк",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3843",
+    "lat": 53.80327666666667,
+    "lng": 87.13450666666667
+  },
+  {
+    "id": "9ffac95e-9880-11e9-ae51-005056871c8e",
+    "name": "Новороссийск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8617",
+    "lat": 44.698080000000004,
+    "lng": 37.75421666666667
+  },
+  {
+    "id": "6958b568-4686-11e3-9765-0050569934c7",
+    "name": "Новосибирск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "383",
+    "lat": 54.99932565217392,
+    "lng": 82.95317130434783
+  },
+  {
+    "id": "9dd8dcd7-b6d0-11e7-ae44-005056991fe0",
+    "name": "Октябрьский",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "213",
+    "lat": 54.50268,
+    "lng": 53.50699
+  },
+  {
+    "id": "6958b56f-4686-11e3-9765-0050569934c7",
+    "name": "Омск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3812",
+    "lat": 54.992214000000004,
+    "lng": 73.348612
+  },
+  {
+    "id": "4029fb01-115c-11e8-ae47-005056991fe0",
+    "name": "Ордынское",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "219",
+    "lat": 54.36253,
+    "lng": 81.9036
+  },
+  {
+    "id": "43402882-6718-11e9-ae50-005056991fe0",
+    "name": "Оренбург",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "353",
+    "lat": 51.81037,
+    "lng": 55.08972
+  },
+  {
+    "id": "b6d60429-87ca-11e7-ab61-0050569911ac",
+    "name": "Орёл",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4862",
+    "lat": 53.0031,
+    "lng": 36.01706
+  },
+  {
+    "id": "a9711293-c847-11e8-ae4e-005056871c8e",
+    "name": "Павлодар",
+    "isDeleted": false,
+    "currencyCode": "KZT",
+    "countryCode": "KZ",
+    "phoneCode": "7182",
+    "lat": 52.28588,
+    "lng": 76.97305
+  },
+  {
+    "id": "aba648d2-8602-11ea-ae53-005056871c8e",
+    "name": "Пенза",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "241",
+    "lat": 53.18943,
+    "lng": 45.0401
+  },
+  {
+    "id": "d5a571ae-e7af-11ec-ae59-005056991fe0",
+    "name": "Переславль-Залесский",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "485",
+    "lat": 56.76225,
+    "lng": 38.86965
+  },
+  {
+    "id": "8babe834-1ad2-11e9-ae53-005056876845",
+    "name": "Пермь",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "342",
+    "lat": 57.982866666666666,
+    "lng": 56.17183
+  },
+  {
+    "id": "babda60d-0fcd-11e8-ae47-005056991fe0",
+    "name": "Петрозаводск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8142",
+    "lat": 61.78148,
+    "lng": 34.40282
+  },
+  {
+    "id": "546ea34f-2fef-11ec-814e-005056872826",
+    "name": "Петропавловск",
+    "isDeleted": false,
+    "currencyCode": "KZT",
+    "countryCode": "KZ",
+    "phoneCode": "7182",
+    "lat": 54.86114,
+    "lng": 69.14997
+  },
+  {
+    "id": "9aee7ff0-72b3-11e7-9411-0050569911ac",
+    "name": "Подольск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.447915,
+    "lng": 37.547200000000004
+  },
+  {
+    "id": "02904b62-3b7c-11e7-9d01-0050569911ac",
+    "name": "Прокопьевск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3846",
+    "lat": 53.86189,
+    "lng": 86.64694
+  },
+  {
+    "id": "e441a0ce-8e62-11e8-ae4a-005056991fe0",
+    "name": "Псков",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8112",
+    "lat": 57.836455,
+    "lng": 28.324444999999997
+  },
+  {
+    "id": "d8a22a2d-fcc5-11e7-ae46-005056991fe0",
+    "name": "Пушкино",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.99501,
+    "lng": 37.85665
+  },
+  {
+    "id": "cc82628e-a262-11e9-ae51-005056871c8e",
+    "name": "Пятигорск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8793",
+    "lat": 44.04019,
+    "lng": 43.04354
+  },
+  {
+    "id": "4e24a28a-5d7f-11ee-851c-005056874eea",
+    "name": "Раменское",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.58183,
+    "lng": 38.21386
+  },
+  {
+    "id": "629148fd-b3e7-11e7-ae44-005056991fe0",
+    "name": "Ростов-на-Дону",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "863",
+    "lat": 47.254533333333335,
+    "lng": 39.72268
+  },
+  {
+    "id": "f89f16f3-6af2-11e9-ae50-005056991fe0",
+    "name": "Рубцовск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "232",
+    "lat": 51.4801,
+    "lng": 81.20265
+  },
+  {
+    "id": "ecf240f0-b102-11e9-ae51-005056871c8e",
+    "name": "Рязань",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4912",
+    "lat": 54.629665,
+    "lng": 39.733365000000006
+  },
+  {
+    "id": "64cdce1a-1a56-11ee-ae5c-005056991fe0",
+    "name": "Салехард",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "34922",
+    "lat": 66.57162,
+    "lng": 66.57271
+  },
+  {
+    "id": "b2220183-1739-11e9-ae4d-005056991fe0",
+    "name": "Самара",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "846",
+    "lat": 53.223816666666664,
+    "lng": 50.1934
+  },
+  {
+    "id": "e27c7bc9-1ac1-11e8-ae47-005056991fe0",
+    "name": "Санкт-Петербург",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "812",
+    "lat": 53.242102222222215,
+    "lng": 27.014317777777777
+  },
+  {
+    "id": "fb8ff5ad-fb15-11eb-ae57-005056991fe0",
+    "name": "Саранск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "342",
+    "lat": 54.22141,
+    "lng": 45.1957
+  },
+  {
+    "id": "503ffc77-df64-11e9-ae53-005056871c8e",
+    "name": "Саратов",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8452",
+    "lat": 51.52356,
+    "lng": 46.03219
+  },
+  {
+    "id": "a31e9b08-a9d1-11e9-ae51-005056871c8e",
+    "name": "Севастополь",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8692",
+    "lat": 44.57619,
+    "lng": 33.47269
+  },
+  {
+    "id": "7c33daba-047d-11ea-ae53-005056871c8e",
+    "name": "Семей",
+    "isDeleted": false,
+    "currencyCode": "KZT",
+    "countryCode": "KZ",
+    "phoneCode": "7182",
+    "lat": 50.39787,
+    "lng": 80.22757
+  },
+  {
+    "id": "34250bb8-6e61-11e6-a0a4-0050569911ac",
+    "name": "Сергиев Посад",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 56.33386,
+    "lng": 38.12961
+  },
+  {
+    "id": "03e4c10e-5c54-11ee-851c-005056874eea",
+    "name": "Серпухов",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 54.91368,
+    "lng": 37.45295
+  },
+  {
+    "id": "396e9c3d-4717-11ea-ae53-005056871c8e",
+    "name": "Сибай",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "245",
+    "lat": 52.72097,
+    "lng": 58.68678
+  },
+  {
+    "id": "ba429e7a-87bc-11ec-ae60-005056876845",
+    "name": "Симферополь",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3652",
+    "lat": 44.93531,
+    "lng": 34.08614
+  },
+  {
+    "id": "dc59c26c-b510-11ee-851c-00505687f5ad",
+    "name": "Славгород",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "38568",
+    "lat": 0,
+    "lng": 0
+  },
+  {
+    "id": "652b8985-c7d6-11ea-ae53-005056991fe0",
+    "name": "Советский",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3842",
+    "lat": 61.36123,
+    "lng": 63.58961
+  },
+  {
+    "id": "8d9cf14e-36fe-11e9-ae4f-005056871c8e",
+    "name": "Соликамск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "225",
+    "lat": 59.70334,
+    "lng": 56.734
+  },
+  {
+    "id": "4ee8eb2b-559d-11e7-b73f-0050569911ac",
+    "name": "Сосновоборск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "391",
+    "lat": 56.1195,
+    "lng": 93.32012
+  },
+  {
+    "id": "b6478403-dc6e-11e5-84e3-0050569911ac",
+    "name": "Сочи",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8622",
+    "lat": 43.43555,
+    "lng": 39.92842
+  },
+  {
+    "id": "7be5efb1-91c1-11e5-9aef-0050569911ac",
+    "name": "Ставрополь",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8652",
+    "lat": 45.04826,
+    "lng": 41.91022
+  },
+  {
+    "id": "798c768a-74f9-11ed-814f-005056872826",
+    "name": "Тверь",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8482",
+    "lat": 56.80902,
+    "lng": 35.87139
+  },
+  {
+    "id": "87b4d8ff-d2de-11ed-8150-005056872826",
+    "name": "Тимашевск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "86130",
+    "lat": 45.60936,
+    "lng": 38.94616
+  },
+  {
+    "id": "7f39cddc-4131-11e8-ae49-005056991fe0",
+    "name": "Тольятти",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8482",
+    "lat": 53.532199999999996,
+    "lng": 49.32056666666667
+  },
+  {
+    "id": "15be1c8a-bd83-11e4-bc8a-0050569934c7",
+    "name": "Томск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3822",
+    "lat": 56.50196333333334,
+    "lng": 84.98147
+  },
+  {
+    "id": "0f78d253-5faf-11ed-814f-005056872826",
+    "name": "Тула",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4872",
+    "lat": 54.2106,
+    "lng": 37.61911
+  },
+  {
+    "id": "d7111802-f569-11e5-9ae2-0050569911ac",
+    "name": "Тюмень",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3452",
+    "lat": 57.14007200000001,
+    "lng": 65.589322
+  },
+  {
+    "id": "7d025ec0-d5f1-11e9-ae52-005056991fe0",
+    "name": "Узловая",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "244",
+    "lat": 53.98054,
+    "lng": 38.15342
+  },
+  {
+    "id": "fb9bad64-65ac-11e9-ae51-005056871c8e",
+    "name": "Улан-Удэ",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3012",
+    "lat": 51.82099,
+    "lng": 107.65259
+  },
+  {
+    "id": "9d1a50dc-1817-11eb-ae5b-005056876845",
+    "name": "Уральск",
+    "isDeleted": false,
+    "currencyCode": "KZT",
+    "countryCode": "KZ",
+    "phoneCode": "7182",
+    "lat": 51.24666,
+    "lng": 51.38336
+  },
+  {
+    "id": "97d3e84d-485b-11e8-ae49-005056991fe0",
+    "name": "Уссурийск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4234",
+    "lat": 43.79299,
+    "lng": 131.98643
+  },
+  {
+    "id": "dc217ae5-341d-11ea-ae5a-005056876845",
+    "name": "Усть-Каменогорск",
+    "isDeleted": false,
+    "currencyCode": "KZT",
+    "countryCode": "KZ",
+    "phoneCode": "7182",
+    "lat": 49.96086333333333,
+    "lng": 82.58840333333333
+  },
+  {
+    "id": "2f6804cb-240b-11e7-a97d-0050569911ac",
+    "name": "Уфа",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "347",
+    "lat": 54.76110166666667,
+    "lng": 56.03962666666666
+  },
+  {
+    "id": "518c2c1f-0a26-11ec-ae57-005056991fe0",
+    "name": "Учалы",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "34791",
+    "lat": 54.3063,
+    "lng": 59.38261
+  },
+  {
+    "id": "1949879c-b498-11df-84ca-00215abc817d",
+    "name": "Хабаровск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4212",
+    "lat": 48.457265,
+    "lng": 135.10677499999997
+  },
+  {
+    "id": "e3f93e34-37b6-11e8-ae47-005056991fe0",
+    "name": "Чайковский",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "212",
+    "lat": 56.76858,
+    "lng": 54.1173
+  },
+  {
+    "id": "efebf0f6-dc6f-11e5-84e3-0050569911ac",
+    "name": "Челябинск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "351",
+    "lat": 55.16087000000001,
+    "lng": 61.37136333333333
+  },
+  {
+    "id": "5269d545-71a6-11eb-ae5e-005056876845",
+    "name": "Черепаново",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "383",
+    "lat": 54.2205,
+    "lng": 83.31929
+  },
+  {
+    "id": "13c1150a-e3d2-11ed-ae62-005056876845",
+    "name": "Череповец",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "8172",
+    "lat": 59.13619,
+    "lng": 37.98178
+  },
+  {
+    "id": "72cb1f71-fa80-11ed-ae62-005056876845",
+    "name": "Чехов",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.14313,
+    "lng": 37.47633
+  },
+  {
+    "id": "5081b4c8-f7a0-11e8-ae4c-005056991fe0",
+    "name": "Чита",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "3022",
+    "lat": 52.04753,
+    "lng": 113.50233
+  },
+  {
+    "id": "39525445-683c-11e7-9411-0050569911ac",
+    "name": "Щёлково",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.9119,
+    "lng": 37.9944
+  },
+  {
+    "id": "ff5f0611-3942-11ed-ae61-005056876845",
+    "name": "Электросталь",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "499",
+    "lat": 55.78238,
+    "lng": 38.4539
+  },
+  {
+    "id": "eb8cdc93-8fd1-11ec-814f-005056872826",
+    "name": "Южно-Сахалинск",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4242",
+    "lat": 46.92779,
+    "lng": 142.7335
+  },
+  {
+    "id": "67584d3e-28a5-11e7-a97d-0050569911ac",
+    "name": "Ярославль",
+    "isDeleted": false,
+    "currencyCode": "RUR",
+    "countryCode": "RU",
+    "phoneCode": "4852",
+    "lat": 57.67051,
+    "lng": 39.84121
+  }
+]
