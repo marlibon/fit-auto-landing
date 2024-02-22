@@ -1,5 +1,6 @@
 export const API_KEY = '7b7a0852-b523-41ff-a804-8be86af2e554';
 export const urlImages = 'https://zagriev.ru/images/';
+export const urlProdctsImages = 'products/';
 export const settingsSlider = {
   className: 'center',
   dots: true,

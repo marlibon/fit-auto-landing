@@ -1,0 +1,58 @@
+[
+  {
+    "id": 0,
+    "image": "1.png",
+    "name": "Автосервис",
+    "count": 65,
+    "link": "https://fitauto.ru/booking/avtoservis/"
+  },
+  {
+    "id": 1,
+    "image": "2.png",
+    "name": "Диагностика",
+    "count": 13,
+    "link": "https://fitauto.ru/booking/diagnostika/"
+  },
+  {
+    "id": 2,
+    "image": "3.png",
+    "name": "Шиномонтаж",
+    "count": 38,
+    "link": "https://fitauto.ru/booking/shinomontazh/"
+  },
+  {
+    "id": 3,
+    "image": "4.png",
+    "name": "Восстановленные АКПП",
+    "count": 0,
+    "link": "https://rekpp.fitauto.ru/"
+  },
+  {
+    "id": 4,
+    "image": "5.png",
+    "name": "Кузовной ремонт",
+    "count": 0,
+    "link": "https://fitauto.ru/body-repair-by-photo/"
+  },
+  {
+    "id": 5,
+    "image": "6.png",
+    "name": "ОСАГО онлайн",
+    "count": 0,
+    "link": "https://fitauto.ru/osago/"
+  },
+  {
+    "id": 6,
+    "image": "7.png",
+    "name": "Технический осмотр",
+    "count": 0,
+    "link": "https://fitauto.ru/tech-inspect/"
+  },
+  {
+    "id": 7,
+    "image": "8.png",
+    "name": "Услуги для автопарков",
+    "count": 0,
+    "link": "https://fitauto.ru/corp/"
+  }
+]

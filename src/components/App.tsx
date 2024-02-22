@@ -27,6 +27,8 @@ import promoServices from '../data/services.json';
 import cities from '../data/cities.json';
 import ItemPromo from './item-promo';
 import Office from './form-record/office';
+import Products from './Products/products';
+import PromoDefault from './Promo-default/promo-default';
 
 function App() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -71,6 +73,8 @@ function App() {
                   />
                 ))}
               </Routes>
+              <PromoDefault sectionRef={sectionRef} />
+              <Products />
               <FormRecord promo={promo} isIncludes={false} city={city} />
               <Routes>
                 {promoServices.map((p) => (
