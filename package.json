@@ -2,6 +2,7 @@
   "name": "fit-service",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/pub/fitservice",
   "dependencies": {
     "@pbe/react-yandex-maps": "^1.2.5",
     "@reduxjs/toolkit": "^1.9.5",

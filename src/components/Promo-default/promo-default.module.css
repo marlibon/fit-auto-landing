@@ -154,7 +154,7 @@
         flex-direction: column;
         justify-content: space-between;
 
-        height: calc(100vh);
+        height: 100%;
     } 
 
     .promo-default__title {
