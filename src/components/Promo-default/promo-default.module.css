@@ -116,7 +116,6 @@
 
 @media screen and (max-width: 989px) {
     .promo-default {
-        height: 950px;
         padding-top: 10%;
 
         background: linear-gradient(45deg,#fe4019 25%,#ff953d);
