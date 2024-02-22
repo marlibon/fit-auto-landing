@@ -27,6 +27,7 @@ import promoServices from '../data/services.json';
 import cities from '../data/cities.json';
 import ItemPromo from './item-promo';
 import Office from './form-record/office';
+import FooterContacts from './footer-contacts/footer-contacts';
 
 function App() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -90,6 +91,7 @@ function App() {
                   ))}
               </OtherPromo>
               <OldModals />
+              <FooterContacts city={city} />
               <Footer
                 setShowPopupOfficeAddress={setisShowModalAddress}
                 city={city}
