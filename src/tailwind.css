@@ -1652,6 +1652,9 @@ video {
   .md\:w-\[700px\] {
     width: 700px;
   }
+  .md\:w-\[750px\] {
+    width: 750px;
+  }
   .md\:w-\[956px\] {
     width: 956px;
   }
@@ -3607,6 +3610,9 @@ video {
   }
   .md\:w-\[700px\] {
     width: 700px;
+  }
+  .md\:w-\[750px\] {
+    width: 750px;
   }
   .md\:w-\[956px\] {
     width: 956px;
