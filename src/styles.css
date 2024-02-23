@@ -194,6 +194,10 @@
   line-height: 1.5rem;
   font-weight: 500;
 }
+[id*='id_'] {
+  width: 232px !important;
+  height: auto !important;
+}
 @media (min-width: 550px) {
   .headerLogo {
     width: 12rem;
@@ -234,9 +238,7 @@
   [class*='balloon__content'] {
     /* max-height: 100px !important; */
   }
-  [id*='id_'] {
-    width: 232px !important;
-  }
+
   [id*='id_'] img {
     display: none;
   }

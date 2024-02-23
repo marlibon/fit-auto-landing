@@ -19,12 +19,7 @@ interface IProps {
   balloonContentBody?: string;
 }
 
-export const MapForAddress = ({
-  city,
-  width,
-  height,
-  balloonContentBody
-}: IProps) => {
+export const MapForAddress = ({ city, width, height }: IProps) => {
   const ref2 = useRef();
   return (
     <YMaps
@@ -44,9 +39,6 @@ export const MapForAddress = ({
         height={height ? height : `${window.innerHeight * 0.7}px`}
         modules={['control.ZoomControl']}
       >
-        {/* <ZoomControl options={{ float: "right" }} /> */}
-        {/* <SearchControl options={{ float: 'right' }} /> */}
-
         <TypeSelector
           options={{
             //@ts-ignore
@@ -54,12 +46,8 @@ export const MapForAddress = ({
           }}
         />
         <Placemark
-          // onClick={() => {
-          //   setSelected(sto);
-          // }}
           defaultGeometry={[city.lat, city.lng]}
           options={{
-            // iconImageSize: [10, 10],
             preset: 'islands#orangeIcon',
             openHintOnHover: true,
             iconLayout: 'default#image',
@@ -72,10 +60,10 @@ export const MapForAddress = ({
           }}
           properties={{
             iconContent: 'fit',
-            // hintContent: city.address,
-            // balloonContent: `<img src="${urlImages + city.img1}" alt="" width="100%" />`,
             balloonContentHeader: city.address,
-            balloonContentBody,
+            balloonContentBody: `
+            <img src="${urlImages + city.img1}" alt="" width="100%" />
+            `,
             maxWidth: 100,
             autoPan: true
           }}

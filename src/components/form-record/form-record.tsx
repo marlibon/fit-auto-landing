@@ -189,7 +189,7 @@ const FormRecord: React.FC<Props> = ({
               </button>
             </div>
           </form>
-          <div className="modal-backdrop flex justify-center p-4 overflow-hidden items-center hidden">
+          {/* <div className="modal-backdrop flex justify-center p-4 overflow-hidden items-center hidden">
             <div className="w-full md:w-[70%] bg-white mx-auto shadow rounded-2xl border-t-2 border-[#F47D32] p-4 relative">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 <div>
@@ -213,7 +213,7 @@ const FormRecord: React.FC<Props> = ({
               </div>{' '}
               <span className="btn-close-map w-[40px] h-[40px] ml-2 mt-0.5 cursor-pointer absolute top-[20px] right-[20px]" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {showPopupOk && (

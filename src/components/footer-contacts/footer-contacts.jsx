@@ -27,10 +27,7 @@ const FooterContacts = ({ city }) => {
                 <MapForAddress
                   height={`${window.innerHeight * 0.4}px`}
                   city={city}
-                  balloonContentBody={`
-                <img src="${urlImages + city.img1}" alt="" width="100%" />
-                <br>
-                <button type="button" class="btn btn-default bg-[#F47D32] h-[54px] w-full lg:w-[158px] text-white font-medium rounded-lg mr-0 lg:mr-6 mb-2 lg:mb-0 hover:bg-orange-600">Записаться</button>`}
+                  // balloonContentBody={}
                 />
               </div>
             </div>
