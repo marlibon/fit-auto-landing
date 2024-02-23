@@ -8,17 +8,24 @@ import React, {
 import { YMaps, Map, Placemark, TypeSelector } from '@pbe/react-yandex-maps';
 import iconSelect from '../../../images/map-icon-point.svg';
 import iconPoint from '../../../images/point-orange.svg';
-import { API_KEY } from 'src/utils/constants';
+import { API_KEY, urlImages } from 'src/utils/constants';
 import { Location, typeCity, typeSto } from 'src/utils/types';
 import all from '../all.json';
 
 interface IProps {
   city: Location;
+  width?: string;
+  height?: string;
+  balloonContentBody?: string;
 }
 
-export const MapForAddress = ({ city }: IProps) => {
+export const MapForAddress = ({
+  city,
+  width,
+  height,
+  balloonContentBody
+}: IProps) => {
   const ref2 = useRef();
-
   return (
     <YMaps
       query={{
@@ -30,11 +37,11 @@ export const MapForAddress = ({ city }: IProps) => {
         instanceRef={ref2}
         state={{
           center: [city.lat, city.lng],
-          zoom: 11,
+          zoom: 12,
           controls: ['zoomControl']
         }}
-        width="100%"
-        height={`${window.innerHeight * 0.7}px`}
+        width={width ? width : '100%'}
+        height={height ? height : `${window.innerHeight * 0.7}px`}
         modules={['control.ZoomControl']}
       >
         {/* <ZoomControl options={{ float: "right" }} /> */}
@@ -57,15 +64,20 @@ export const MapForAddress = ({ city }: IProps) => {
             openHintOnHover: true,
             iconLayout: 'default#image',
             iconImageHref: iconSelect,
-            iconImageSize: [40, 40],
-            iconImageOffset: [-20, -20]
+            iconImageSize: [50, 50],
+            iconImageOffset: [-20, -20],
+            hasBalloon: true,
+            hideIconOnBalloonOpen: true,
+            iconOffset: [0, -10]
           }}
           properties={{
             iconContent: 'fit',
-            hintContent: city.address,
+            // hintContent: city.address,
+            // balloonContent: `<img src="${urlImages + city.img1}" alt="" width="100%" />`,
             balloonContentHeader: city.address,
-            autoPan: true,
-            offset: [34, 40]
+            balloonContentBody,
+            maxWidth: 100,
+            autoPan: true
           }}
         />
       </Map>
