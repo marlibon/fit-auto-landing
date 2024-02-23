@@ -8,9 +8,16 @@ const elementHtmlToModal = document.getElementById('modal');
 interface ModalProps {
   onClose: () => void;
   children: React.ReactNode;
+  priority?: number;
+  isLayout?: boolean;
 }
 
-const Modal: React.FC<ModalProps> = ({ onClose, children }) => {
+const Modal: React.FC<ModalProps> = ({
+  onClose,
+  children,
+  priority = 1,
+  isLayout = true
+}) => {
   useEffect(() => {
     const handleDownKeyEsc = (event: KeyboardEvent): void => {
       event.key === 'Escape' && onClose();
@@ -21,14 +28,14 @@ const Modal: React.FC<ModalProps> = ({ onClose, children }) => {
       document.removeEventListener('keydown', handleDownKeyEsc);
     };
   }, [onClose]);
-
   const modalWindowContent = (
     <div
       className="modal-backdrop flex justify-center p-4 overflow-hidden items-center"
       onClick={onClose}
+      style={{ zIndex: priority }}
     >
       <div
-        className="w-full md:w-[70%] bg-white mx-auto shadow rounded-2xl border-t-2 border-[#F47D32] p-4 relative"
+        className={`${isLayout ? 'w-full md:w-[70%] bg-white mx-auto shadow rounded-2xl border-t-2 border-[#F47D32] p-4' : ''} relative`}
         onClick={(e) => e.stopPropagation()}
       >
         {children}{' '}

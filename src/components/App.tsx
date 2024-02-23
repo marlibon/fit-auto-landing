@@ -32,6 +32,7 @@ import FooterContacts from './footer-contacts/footer-contacts';
 function App() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isShowModalSelectOffice, setisShowModalSelectOffice] = useState(false);
+  const [isShowModalFormRecord, setisShowModalFormRecord] = useState(false);
   const [isShowModalAddres, setisShowModalAddress] = useState(false);
   const [selectedOffice, setSelectedOffice] = useState<typeSto>();
   const [selectedCity, setSelectCity] = useState<typeCity>();
@@ -106,6 +107,22 @@ function App() {
           }}
         >
           <Office city={city} />
+        </Modal>
+      )}
+      {isShowModalFormRecord && (
+        <Modal
+          isLayout={false}
+          onClose={() => setisShowModalFormRecord(false)}
+          priority={999}
+        >
+          <FormRecord
+            isIncludes={false}
+            isModal={true}
+            promo={promo}
+            city={city}
+            title="Оставьте заявку на звонок"
+            subTitle="И получите точный расчет стоимости ремонта и запчастей"
+          />
         </Modal>
       )}
     </>
