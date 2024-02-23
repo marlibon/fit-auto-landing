@@ -75,7 +75,7 @@ export const MapForAddress = ({
             // hintContent: city.address,
             // balloonContent: `<img src="${urlImages + city.img1}" alt="" width="100%" />`,
             balloonContentHeader: city.address,
-            balloonContentBody: `<img src="${urlImages + city.img1}" alt="" width="100%" />`,
+            balloonContentBody,
             maxWidth: 100,
             autoPan: true
           }}

@@ -53,34 +53,18 @@ function App() {
             className="font-fact flex flex-col h-screen w-full overflow-x-hidden"
           >
             <div className="main-page flex-grow">
-              <Routes>
-                {promoServices.map((p) => (
-                  <Route
-                    path={p.slug}
-                    element={
-                      <Promo
-                        sectionRef={sectionRef}
-                        selectedCity={selectedCity}
-                        setSelectCity={setSelectCity}
-                        showPopupSelectCity={showPopupSelectCity}
-                        setShowPopupOfficeAddress={setisShowModalAddress}
-                        setshowPopupSelectCity={setshowPopupSelectCity}
-                        promo={p}
-                        city={city}
-                      />
-                    }
-                  />
-                ))}
-              </Routes>
+              <Promo
+                sectionRef={sectionRef}
+                selectedCity={selectedCity}
+                setSelectCity={setSelectCity}
+                showPopupSelectCity={showPopupSelectCity}
+                setShowPopupOfficeAddress={setisShowModalAddress}
+                setshowPopupSelectCity={setshowPopupSelectCity}
+                promo={promo}
+                city={city}
+              />
               <FormRecord promo={promo} isIncludes={false} city={city} />
-              <Routes>
-                {promoServices.map((p) => (
-                  <Route
-                    path={p.slug}
-                    element={<DescriptionPromo promo={p} city={city} />}
-                  />
-                ))}
-              </Routes>
+              <DescriptionPromo promo={promo} city={city} />
               <Timer />
               <Pluses />
               <OtherPromo>
