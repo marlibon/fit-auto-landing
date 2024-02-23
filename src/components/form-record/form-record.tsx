@@ -7,10 +7,20 @@ import SelectOptions from './select-options';
 import Office from './office';
 interface Props {
   isIncludes: boolean;
+  isModal?: boolean;
   promo: Promotion;
   city: Location;
+  title?: string;
+  subTitle?: string;
 }
-const FormRecord: React.FC<Props> = ({ isIncludes, promo, city }) => {
+const FormRecord: React.FC<Props> = ({
+  isIncludes,
+  isModal,
+  promo,
+  city,
+  title,
+  subTitle
+}) => {
   const [name, setName] = useState('');
   const [tel, setTel] = useState('');
   const [showPopupOk, setshowPopupOk] = useState(false);
@@ -45,11 +55,19 @@ const FormRecord: React.FC<Props> = ({ isIncludes, promo, city }) => {
   return (
     <>
       <div
-        className={`w-full md:w-[700px] bg-white mx-auto shadow rounded-2xl border-t-2 border-[#F47D32] p-8 ${isIncludes ? 'isIncludes' : 'relative top-[-20px] md:top-[-150px]'}`}
+        className={`w-full ${isModal ? 'md:w-[750px]' : 'md:w-[700px]'} bg-white mx-auto shadow rounded-2xl border-t-2 border-[#F47D32] p-8 ${isIncludes ? 'isIncludes ' : 'relative top-[-20px] md:top-[-150px] '}`}
+        style={isModal ? { top: '0' } : {}}
       >
         <div className="flex justify-between items-center">
-          <h5 className="text-4xl font-bold mb-6">Оставьте заявку на звонок</h5>
+          <h5 className="text-4xl font-bold mb-6">
+            {title ? title : 'Оставьте заявку на звонок'}
+          </h5>
         </div>
+        {subTitle && (
+          <div className="flex justify-between items-center">
+            <h5 className="text-2xl mb-4">{subTitle}</h5>
+          </div>
+        )}
         <div>
           <form className="bg-white w-full flex flex-col">
             <div className="flex flex-col items-center mb-4 flex-wrap gap-4 md:flex-row" />
@@ -97,11 +115,6 @@ const FormRecord: React.FC<Props> = ({ isIncludes, promo, city }) => {
                 </div>
               </div>
             </div>
-            <SelectOptions
-              options={promo.options}
-              selected={selected}
-              setSelected={setSelected}
-            />
             <div className="flex flex-col items-center mb-4 md:flex-row">
               <div className="form-item w-full md:w-1/2 mb-4 md:mb-0 md:mr-2">
                 <input
@@ -132,6 +145,27 @@ const FormRecord: React.FC<Props> = ({ isIncludes, promo, city }) => {
                 </div>
               </div>
             </div>
+            <SelectOptions
+              options={
+                [
+                  'Диагностика ходовой',
+                  'Замена масла',
+                  'Техническое обслуживание двигателя'
+                ] ?? promo.options
+              }
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <div className="flex flex-col items-center mb-4">
+              <div className="w-full relative">
+                <input
+                  id="services"
+                  type="text"
+                  placeholder="Напишите желаемые услуги"
+                  className="text-base text-[#ababab] w-full truncate cursor-pointer border border-transparent h-[58px] rounded-lg bg-[#fafafa] p-4 leading-tight focus:outline-none focus:bg-orange-50 focus:border-gray-200"
+                />{' '}
+              </div>
+            </div>
             <div className="flex flex-col items-center pt-4 border-t border-gray-300 md:flex-row">
               <p className="text-sm font-normal text-gray-400 pr-6 order-2 md:order-1">
                 Нажимая на кнопку Отправить, вы принимаете{' '}
@@ -155,7 +189,7 @@ const FormRecord: React.FC<Props> = ({ isIncludes, promo, city }) => {
               </button>
             </div>
           </form>
-          <div className="modal-backdrop flex justify-center p-4 overflow-hidden items-center hidden">
+          {/* <div className="modal-backdrop flex justify-center p-4 overflow-hidden items-center hidden">
             <div className="w-full md:w-[70%] bg-white mx-auto shadow rounded-2xl border-t-2 border-[#F47D32] p-4 relative">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 <div>
@@ -179,7 +213,7 @@ const FormRecord: React.FC<Props> = ({ isIncludes, promo, city }) => {
               </div>{' '}
               <span className="btn-close-map w-[40px] h-[40px] ml-2 mt-0.5 cursor-pointer absolute top-[20px] right-[20px]" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {showPopupOk && (

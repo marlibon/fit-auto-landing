@@ -29,10 +29,12 @@ import ItemPromo from './item-promo';
 import Office from './form-record/office';
 import Products from './Products/products';
 import PromoDefault from './Promo-default/promo-default';
+import FooterContacts from './footer-contacts/footer-contacts';
 
 function App() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isShowModalSelectOffice, setisShowModalSelectOffice] = useState(false);
+  const [isShowModalFormRecord, setisShowModalFormRecord] = useState(false);
   const [isShowModalAddres, setisShowModalAddress] = useState(false);
   const [selectedOffice, setSelectedOffice] = useState<typeSto>();
   const [selectedCity, setSelectCity] = useState<typeCity>();
@@ -54,36 +56,20 @@ function App() {
             className="font-fact flex flex-col h-screen w-full overflow-x-hidden"
           >
             <div className="main-page flex-grow">
-              <Routes>
-                {promoServices.map((p) => (
-                  <Route
-                    path={p.slug}
-                    element={
-                      <Promo
-                        sectionRef={sectionRef}
-                        selectedCity={selectedCity}
-                        setSelectCity={setSelectCity}
-                        showPopupSelectCity={showPopupSelectCity}
-                        setShowPopupOfficeAddress={setisShowModalAddress}
-                        setshowPopupSelectCity={setshowPopupSelectCity}
-                        promo={p}
-                        city={city}
-                      />
-                    }
-                  />
-                ))}
-              </Routes>
+              <Promo
+                sectionRef={sectionRef}
+                selectedCity={selectedCity}
+                setSelectCity={setSelectCity}
+                showPopupSelectCity={showPopupSelectCity}
+                setShowPopupOfficeAddress={setisShowModalAddress}
+                setshowPopupSelectCity={setshowPopupSelectCity}
+                promo={promo}
+                city={city}
+              />
               <PromoDefault sectionRef={sectionRef} />
               <Products />
               <FormRecord promo={promo} isIncludes={false} city={city} />
-              <Routes>
-                {promoServices.map((p) => (
-                  <Route
-                    path={p.slug}
-                    element={<DescriptionPromo promo={p} city={city} />}
-                  />
-                ))}
-              </Routes>
+              <DescriptionPromo promo={promo} city={city} />
               <Timer />
               <Pluses />
               <OtherPromo>
@@ -94,6 +80,7 @@ function App() {
                   ))}
               </OtherPromo>
               <OldModals />
+              <FooterContacts city={city} />
               <Footer
                 setShowPopupOfficeAddress={setisShowModalAddress}
                 city={city}
@@ -124,6 +111,22 @@ function App() {
           }}
         >
           <Office city={city} />
+        </Modal>
+      )}
+      {isShowModalFormRecord && (
+        <Modal
+          isLayout={false}
+          onClose={() => setisShowModalFormRecord(false)}
+          priority={999}
+        >
+          <FormRecord
+            isIncludes={false}
+            isModal={true}
+            promo={promo}
+            city={city}
+            title="Оставьте заявку на звонок"
+            subTitle="И получите точный расчет стоимости ремонта и запчастей"
+          />
         </Modal>
       )}
     </>

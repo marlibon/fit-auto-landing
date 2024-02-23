@@ -11,6 +11,7 @@
 .isIncludes {
   margin-top: 25px;
   width: 100%;
+  top: 0;
 }
 .description__info h2 {
   margin-bottom: 1.5rem;
@@ -193,6 +194,10 @@
   line-height: 1.5rem;
   font-weight: 500;
 }
+[id*='id_'] {
+  width: 232px !important;
+  height: auto !important;
+}
 @media (min-width: 550px) {
   .headerLogo {
     width: 12rem;
@@ -229,5 +234,12 @@
   .footer__top {
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+  [class*='balloon__content'] {
+    /* max-height: 100px !important; */
+  }
+
+  [id*='id_'] img {
+    display: none;
   }
 }
