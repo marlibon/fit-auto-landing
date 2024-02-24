@@ -1,9 +1,10 @@
 import React, { Dispatch, SetStateAction, useState } from 'react';
-import logowhite from '../images/logo-white.svg';
-import cityImg from '../images/city.svg';
-import SelectCity from './select-city';
-import { Location, Promotion, typeCity } from 'src/utils/types';
-import { urlImages } from 'src/utils/constants';
+import logowhite from '../../images/logo-white.svg';
+import cityImg from '../../images/city.svg';
+import SelectCity from '../old/select-city';
+import { Location, Promotion, typeCity } from '../../../src/utils/types';
+import { urlImages } from '../../../src/utils/constants';
+
 interface props {
   sectionRef: React.RefObject<HTMLDivElement>;
   setSelectCity: Dispatch<SetStateAction<typeCity | undefined>>;

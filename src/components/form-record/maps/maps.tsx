@@ -8,8 +8,8 @@ import React, {
 import { YMaps, Map, Placemark, TypeSelector } from '@pbe/react-yandex-maps';
 import iconSelect from '../../../images/map-icon-point.svg';
 import iconPoint from '../../../images/point-orange.svg';
-import { API_KEY } from 'src/utils/constants';
-import { typeCity, typeSto } from 'src/utils/types';
+import { API_KEY } from '../../../../src/utils/constants';
+import { typeCity, typeSto } from '../../../../src/utils/types';
 import all from '../all.json';
 
 interface IProps {

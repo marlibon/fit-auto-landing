@@ -1,6 +1,6 @@
 import React, { Dispatch, SetStateAction, useState } from 'react';
 import { Maps } from './maps/maps';
-import { typeCity, typeSto } from 'src/utils/types';
+import { typeCity, typeSto } from '../../../src/utils/types';
 import regions from './regions.json';
 import all from './all.json';
 

@@ -7,8 +7,8 @@ import React, {
   useRef,
   useState
 } from 'react';
-import regions from './form-record/regions.json';
-import { typeCity } from 'src/utils/types';
+import regions from '../form-record/regions.json';
+import { typeCity } from '../../../src/utils/types';
 interface IProps {
   selectedCity?: typeCity;
   setSelectCity: Dispatch<SetStateAction<typeCity | undefined>>;

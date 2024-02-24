@@ -8,8 +8,8 @@ import React, {
 import { YMaps, Map, Placemark, TypeSelector } from '@pbe/react-yandex-maps';
 import iconSelect from '../../../images/map-icon-point.svg';
 import iconPoint from '../../../images/point-orange.svg';
-import { API_KEY, urlImages } from 'src/utils/constants';
-import { Location, typeCity, typeSto } from 'src/utils/types';
+import { API_KEY, urlImages } from '../../../../src/utils/constants';
+import { Location, typeCity, typeSto } from '../../../../src/utils/types';
 import all from '../all.json';
 
 interface IProps {
@@ -62,7 +62,7 @@ export const MapForAddress = ({ city, width, height }: IProps) => {
             iconContent: 'fit',
             balloonContentHeader: city.address,
             balloonContentBody: `
-            <img src="${urlImages + city.img1}" alt="" width="100%" />
+            <img src="${urlImages + city.images[0]}" alt="" width="100%" />
             `,
             maxWidth: 100,
             autoPan: true

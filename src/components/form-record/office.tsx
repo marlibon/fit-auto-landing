@@ -1,10 +1,10 @@
 import React, { Dispatch, SetStateAction, useState } from 'react';
 import { Maps } from './maps/maps';
-import { Location, typeCity, typeSto } from 'src/utils/types';
+import { Location, typeCity, typeSto } from '../../../src/utils/types';
 import regions from './regions.json';
 import all from './all.json';
 import { MapForAddress } from './maps/map-for-address';
-import { urlImages } from 'src/utils/constants';
+import { urlImages } from '../../../src/utils/constants';
 import Slider from 'react-slick';
 
 const idCity = '629148fd-b3e7-11e7-ae44-005056991fe0';
@@ -52,18 +52,9 @@ const Office = ({ city }: IProps) => {
               </ul>
               <div className="slider-container">
                 <Slider {...settingsSlider}>
-                  {city.img1 && (
-                    <img src={`${urlImages + city.img1}`} alt="" width="100%" />
-                  )}
-                  {city.img2 && (
-                    <img src={`${urlImages + city.img2}`} alt="" width="100%" />
-                  )}
-                  {city.img3 && (
-                    <img src={`${urlImages + city.img3}`} alt="" width="100%" />
-                  )}
-                  {city.img4 && (
-                    <img src={`${urlImages + city.img4}`} alt="" width="100%" />
-                  )}{' '}
+                  {city.images.map((img) => (
+                    <img src={`${urlImages + img}`} alt="" width="100%" />
+                  ))}
                 </Slider>
               </div>
             </div>

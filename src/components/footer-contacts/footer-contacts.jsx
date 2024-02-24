@@ -1,8 +1,6 @@
 import React from 'react';
-import { Location } from 'src/utils/types';
 import { MapForAddress } from '../form-record/maps/map-for-address';
 import styles from './footer-contacts.module.css';
-import { urlImages } from 'src/utils/constants';
 // interface Props {
 //   city: Location;
 // }

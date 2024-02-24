@@ -2,9 +2,9 @@ import React from 'react';
 import other1 from '../images/other1.jpeg';
 import other2 from '../images/other2.png';
 import other3 from '../images/other3.jpeg';
-import { Promotion } from 'src/utils/types';
+import { Promotion } from '../../../src/utils/types';
 import { Link, useNavigate } from 'react-router-dom';
-import { urlImages } from 'src/utils/constants';
+import { urlImages } from '../../../src/utils/constants';
 interface Props {
   promo: Promotion;
 }

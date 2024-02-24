@@ -10,13 +10,15 @@ interface ModalProps {
   children: React.ReactNode;
   priority?: number;
   isLayout?: boolean;
+  isFull?: boolean;
 }
 
 const Modal: React.FC<ModalProps> = ({
   onClose,
   children,
   priority = 1,
-  isLayout = true
+  isLayout = true,
+  isFull
 }) => {
   useEffect(() => {
     const handleDownKeyEsc = (event: KeyboardEvent): void => {
@@ -35,7 +37,7 @@ const Modal: React.FC<ModalProps> = ({
       style={{ zIndex: priority }}
     >
       <div
-        className={`${isLayout ? 'w-full md:w-[70%] bg-white mx-auto shadow rounded-2xl border-t-2 border-[#F47D32] p-4' : ''} relative`}
+        className={`${isLayout ? 'w-full  bg-white mx-auto shadow rounded-2xl border-t-2 border-[#F47D32] p-4' : ''} ${isFull ? '' : ' md:w-[70%] '} relative`}
         onClick={(e) => e.stopPropagation()}
       >
         {children}{' '}

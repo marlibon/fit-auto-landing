@@ -1,9 +1,9 @@
 import React from 'react';
 import imgAkcia from '../images/img-akcia.png';
 import imgAkcia2 from '../images/img-akcia2.png';
-import FormRecord from './form-record/form-record';
-import { Promotion, Location } from 'src/utils/types';
-import { urlImages } from 'src/utils/constants';
+import FormRecord from '../form-record/form-record';
+import { Promotion, Location } from '../../../src/utils/types';
+import { urlImages } from '../../../src/utils/constants';
 interface Props {
   promo: Promotion;
   city: Location;
