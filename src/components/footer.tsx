@@ -8,6 +8,7 @@ import tiktok from '../images/tik-tok.7721b78.svg';
 import vk from '../images/vk.1b88caa.svg';
 import ok from '../images/ok.67761cd.svg';
 import { Location } from './../../src/utils/types';
+import Header from './header/header';
 interface Props {
   city: Location;
   setShowPopupOfficeAddress: React.Dispatch<React.SetStateAction<boolean>>;

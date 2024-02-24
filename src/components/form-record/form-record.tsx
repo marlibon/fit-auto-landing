@@ -14,6 +14,7 @@ interface Props {
   subTitle?: string;
   text?: string;
   isServices?: boolean;
+  onClose?: () => void;
 }
 const FormRecord: React.FC<Props> = ({
   isIncludes,
@@ -23,7 +24,8 @@ const FormRecord: React.FC<Props> = ({
   title,
   subTitle,
   text,
-  isServices
+  isServices,
+  onClose
 }) => {
   const [name, setName] = useState('');
   const [tel, setTel] = useState('');
@@ -43,10 +45,12 @@ const FormRecord: React.FC<Props> = ({
       () => {
         setshowPopupOk(true);
         setLoading(false);
+        onClose?.();
       },
       () => {
         setshowPopupFailed(true);
         setLoading(false);
+        onClose?.();
       },
       city.slug
     );
@@ -59,7 +63,7 @@ const FormRecord: React.FC<Props> = ({
   return (
     <>
       <div
-        className={`w-full ${isModal ? 'md:w-[750px]' : 'md:w-[700px]'} bg-white mx-auto shadow rounded-2xl border-t-2 border-[#F47D32] p-8 ${isIncludes ? 'isIncludes ' : 'relative top-[-20px] md:top-[-150px] '}`}
+        className={`w-full ${isModal ? ' ' : 'md:w-[700px]'} bg-white mx-auto shadow rounded-2xl border-t-2 border-[#F47D32] p-8 ${isIncludes ? 'isIncludes ' : 'relative top-[-20px] md:top-[-150px] '}`}
         style={isModal ? { top: '0' } : {}}
       >
         <div className="flex justify-between items-center">

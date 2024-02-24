@@ -7,12 +7,10 @@ import { Location, Promotion } from '../../utils/types';
 import styles from './header.module.css';
 
 interface Props {
-  sectionRef?: React.RefObject<HTMLDivElement>;
-  promo: Promotion;
   city: Location;
   setShowPopupOfficeAddress: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const Header: FC<Props> = ({ promo, city, setShowPopupOfficeAddress }) => {
+const Header: FC<Props> = ({ city, setShowPopupOfficeAddress }) => {
   return (
     <section className="section mb-4 about lg:rounded-3xl lg:m-5 lg:mb-24">
       <nav
@@ -26,13 +24,11 @@ const Header: FC<Props> = ({ promo, city, setShowPopupOfficeAddress }) => {
               styles.headerMobile
             )}
           >
-            <a href="/" className="nuxt-link-active">
-              <img
-                src={logoOrange}
-                alt="Fitservice Logo"
-                className={clsx('w-24 md:w-64 ', styles.headerLogo)}
-              />
-            </a>
+            <img
+              src={logoOrange}
+              alt="Fitservice Logo"
+              className={clsx('w-24 md:w-64 ', styles.headerLogo)}
+            />
             <div className={styles.telAndButton}>
               <div
                 className="flex justify-end items-center relative"
@@ -58,9 +54,9 @@ const Header: FC<Props> = ({ promo, city, setShowPopupOfficeAddress }) => {
             <a href={'tel:' + city.tel} className={styles.tel}>
               {city.tel}
             </a>
-            <div className={styles.iconTel}>
+            <a href={'tel:' + city.tel} className={styles.iconTel}>
               <img src={phoneIcon} alt="" />
-            </div>
+            </a>
 
             {/* <div className="flex justify-end items-center relative hidden">
             <img src={cityImg} alt="" className="w-4 h-4" />{' '}

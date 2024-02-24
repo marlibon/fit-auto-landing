@@ -70,23 +70,26 @@ function App() {
             <div className="main-page flex-grow">
               <Header
                 setShowPopupOfficeAddress={setisShowModalAddress}
-                promo={promo}
                 city={city}
               />
 
               <PromoDefault
-                setShowPopupOfficeAddress={setisShowModalAddress}
-                promo={promo}
                 city={city}
-                sectionRef={sectionRef}
+                onClickButtonOrder={() => {
+                  setisShowModalFormRecord(true);
+                }}
               />
-              <Products />
+              <Products
+                onClickButtonOrder={() => {
+                  setisShowModalFormRecord(true);
+                }}
+              />
               {/* <FormRecord promo={promo} isIncludes={false} city={city} /> */}
               <LogotipsAuto />
               {/* <DescriptionPromo promo={promo} city={city} /> */}
+              <Pluses />
               <PromoAndForm promo={promo} city={city} />
               {/* <Timer /> */}
-              <Pluses />
               {/* <OtherPromo>
                 {promoServices
                   .filter((p) => p.slug !== promo.slug)
@@ -122,6 +125,7 @@ function App() {
       )}
       {isShowModalAddres && (
         <Modal
+          priority={10}
           onClose={() => {
             setisShowModalAddress(false);
           }}
@@ -143,6 +147,7 @@ function App() {
             isServices={true}
             title="Оставьте заявку на звонок"
             subTitle="И получите точный расчет стоимости ремонта и запчастей"
+            onClose={() => setisShowModalFormRecord(false)}
           />
         </Modal>
       )}

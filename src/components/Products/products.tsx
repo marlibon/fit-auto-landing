@@ -4,12 +4,17 @@ import styles from './products.module.css';
 
 import products from '../../data/products.json';
 import { urlProductsImages } from '../../utils/constants';
-
-const Products: FC = () => {
+interface Props {
+  onClickButtonOrder: () => void;
+}
+const Products: FC<Props> = ({ onClickButtonOrder }) => {
   return (
     <section className="section max-w-[1280px] mx-auto lg:mb-24">
       <div className="products mb-20 pt-0 px-4 md:px-5">
-        <div className="mb-6 md:mb-12 p-4 md:p-0 lg:pb-5">
+        <div
+          className="mb-6 md:mb-12 p-4 md:p-0 lg:pb-5 cursor-pointer"
+          onClick={onClickButtonOrder}
+        >
           <h2
             className={
               styles['products__title'] + ' text-4xl lg:text-5xl font-bold pb-4'
@@ -21,7 +26,11 @@ const Products: FC = () => {
           <div className="products__subtitle flex">
             <p>
               Мы даём гарантию 1 год на все услуги и запчасти!{' '}
-              <span className="lg pl-1 text-[#F47D32]" title="Гарантия">
+              <span
+                className="lg pl-1 text-[#F47D32]"
+                title="Гарантия"
+                onClick={onClickButtonOrder}
+              >
                 Подробнее
               </span>
             </p>

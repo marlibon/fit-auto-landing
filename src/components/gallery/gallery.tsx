@@ -14,7 +14,7 @@ interface Props {
 
 const Gallery: React.FC<Props> = ({ city, onClick }) => {
   return (
-    <section className="section mb-16 max-w-[1280px] mx-auto">
+    <section className="section mb-16 max-w-[1280px] mx-auto lg:mb-24">
       {/* section  about lg:rounded-3xl lg:m-5 lg:mb-24 */}
       <div className="actions pt-0 px-4 md:px-5">
         <div className="mb-6 md:mb-12 p-4 md:p-0 lg:pb-5">

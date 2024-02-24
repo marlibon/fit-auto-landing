@@ -5,20 +5,13 @@ import { Location, Promotion } from '../../utils/types';
 import Header from '../header/header';
 
 interface IPromoDefault {
-  sectionRef?: React.RefObject<HTMLDivElement>;
-  promo: Promotion;
   city: Location;
-  setShowPopupOfficeAddress: React.Dispatch<React.SetStateAction<boolean>>;
+  onClickButtonOrder: () => void;
 }
 
-const PromoDefault: FC<IPromoDefault> = ({
-  sectionRef,
-  setShowPopupOfficeAddress,
-  promo,
-  city
-}) => {
+const PromoDefault: FC<IPromoDefault> = ({ city, onClickButtonOrder }) => {
   return (
-    <section className={styles['promo-default'] + ' w-full'}>
+    <section className={styles['promo-default'] + ' w-full overflow-hidden'}>
       <div className={styles['promo-default__title-button']}>
         <div className={styles['promo-default__title'] + ' uppercase'}>
           <div className="promo-default__title-line">Проверьте</div>
@@ -26,13 +19,7 @@ const PromoDefault: FC<IPromoDefault> = ({
         </div>
         <button
           className={styles['promo-default__button']}
-          onClick={() =>
-            sectionRef &&
-            sectionRef.current &&
-            sectionRef.current.scrollIntoView({
-              behavior: 'smooth'
-            })
-          }
+          onClick={onClickButtonOrder}
         >
           ЗАПИСАТЬСЯ
         </button>

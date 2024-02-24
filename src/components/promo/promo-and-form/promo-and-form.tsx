@@ -12,7 +12,7 @@ interface Props {
 
 const PromoAndForm: React.FC<Props> = ({ promo, city }) => {
   return (
-    <section className="section max-w-[1280px] mx-auto px-6 mb-4">
+    <section className="section max-w-[1280px] mx-auto px-6 mb-4 lg:mb-24">
       <div className={styles['promo-list-main']}>
         <div className={styles['promo-list-main-inner']}>
           <h1
