@@ -26,11 +26,14 @@ import promoServices from '../data/services.json';
 import cities from '../data/cities.json';
 import ItemPromo from './promo/item-promo';
 import Office from './form-record/office';
+import Products from './Products/products';
+import PromoDefault from './Promo-default/promo-default';
 import FooterContacts from './footer-contacts/footer-contacts';
 import PromoAndForm from './promo/promo-and-form/promo-and-form';
 import LogotipsAuto from './logotips-auto/logotips-auto';
 import GalleryModal from './gallery/gallery-modal';
 import Gallery from './gallery/gallery';
+import Header from './header/header';
 
 function App() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -65,17 +68,20 @@ function App() {
             className="font-fact flex flex-col h-screen w-full overflow-x-hidden"
           >
             <div className="main-page flex-grow">
-              <Promo
-                sectionRef={sectionRef}
-                selectedCity={selectedCity}
-                setSelectCity={setSelectCity}
-                showPopupSelectCity={showPopupSelectCity}
+              <Header
                 setShowPopupOfficeAddress={setisShowModalAddress}
-                setshowPopupSelectCity={setshowPopupSelectCity}
                 promo={promo}
                 city={city}
               />
-              <FormRecord promo={promo} isIncludes={false} city={city} />
+
+              <PromoDefault
+                setShowPopupOfficeAddress={setisShowModalAddress}
+                promo={promo}
+                city={city}
+                sectionRef={sectionRef}
+              />
+              <Products />
+              {/* <FormRecord promo={promo} isIncludes={false} city={city} /> */}
               <LogotipsAuto />
               {/* <DescriptionPromo promo={promo} city={city} /> */}
               <PromoAndForm promo={promo} city={city} />

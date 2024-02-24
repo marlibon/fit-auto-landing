@@ -2,6 +2,7 @@
   "name": "fit-service",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/pub/fitservice",
   "dependencies": {
     "@pbe/react-yandex-maps": "^1.2.5",
     "@reduxjs/toolkit": "^1.9.5",
@@ -62,6 +63,7 @@
   },
   "devDependencies": {
     "@types/react-datepicker": "^4.19.5",
+    "@types/uuid": "^9.0.8",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.3"

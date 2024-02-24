@@ -188,12 +188,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.cityAddress {
-  text-decoration: underline;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-}
+
 [id*='id_'] {
   width: 232px !important;
   height: auto !important;
@@ -217,12 +212,6 @@
 }
 
 @media (max-width: 550px) {
-  .headerMobile {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-  }
   .headerLogo {
     width: 12rem;
     margin-bottom: 1rem;
