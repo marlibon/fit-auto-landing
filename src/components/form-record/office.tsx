@@ -50,13 +50,13 @@ const Office = ({ city }: IProps) => {
                 <li>Наблюдение за ходом ремонта из удобной комнаты</li>
                 <li>Бесплатные кофе/чай в зоне ожидания</li>
               </ul>
-              <div className="slider-container">
+              {/* <div className="slider-container">
                 <Slider {...settingsSlider}>
                   {city.images.map((img) => (
                     <img src={`${urlImages + img}`} alt="" width="100%" />
                   ))}
                 </Slider>
-              </div>
+              </div> */}
             </div>
           </ul>
         </div>

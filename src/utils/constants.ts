@@ -4,7 +4,7 @@ export const API_KEY = '7b7a0852-b523-41ff-a804-8be86af2e554';
 export const url = 'http://servis-paveleckaya.ru';
 export const urlImages = url + '/images/';
 
-export const urlProdctsImages = 'products/';
+export const urlProductsImages = urlImages + 'products/';
 export const settingsSlider = {
   className: 'center',
   dots: true,
@@ -98,30 +98,30 @@ export const settingsSliderGallery = {
   focusOnSelect: true,
   autoplay: true,
   arrows: false,
-  rows: 2,
+  rows: 1,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
-        rows: 2
+        slidesToScroll: 2
+        // rows: 2
       }
     },
     {
       breakpoint: 700,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
-        rows: 2
+        slidesToScroll: 2
+        // rows: 2
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1,
-        rows: 2
+        slidesToScroll: 1
+        // rows: 2
       }
     }
   ],

@@ -1,0 +1,72 @@
+.telAndButton {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+}
+.button {
+  margin-top: 15px;
+  height: 35px;
+}
+
+.tel {
+  display: none;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #f47d32;
+}
+.iconTel {
+  display: block;
+}
+@media (min-width: 1100px) {
+  .iconTel {
+    display: none;
+  }
+  .tel {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .iconTel {
+    display: none;
+  }
+  .tel {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+.cityAddress {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #5c5049;
+}
+.cityAddress:hover {
+  text-decoration: underline;
+}
+@media (max-width: 650px) {
+  .headerMobile {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .cityAddress {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .headerLogo {
+    width: 12rem;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .headerLogo {
+    width: 16rem;
+    margin-right: 30px;
+  }
+}

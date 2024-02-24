@@ -4,6 +4,7 @@ import cityImg from '../../images/city.svg';
 import SelectCity from '../old/select-city';
 import { Location, Promotion, typeCity } from '../../../src/utils/types';
 import { urlImages } from '../../../src/utils/constants';
+import Header from '../header/header';
 
 interface props {
   sectionRef: React.RefObject<HTMLDivElement>;
@@ -33,50 +34,6 @@ const Promo = ({
         backgroundSize: '100% 100%'
       }}
     >
-      <div className="relative z-50">
-        <nav
-          id="navbar"
-          className="relative z-10 w-full mb-0 lg:mb-12 light-theme"
-        >
-          <div className="navbar__inner max-w-[1280px] xs:w-full mx-auto py-4 px-4 relative">
-            <div className="flex justify-between items-center headerMobile">
-              <a href="/" className="nuxt-link-active">
-                <img
-                  src={logowhite}
-                  alt="Fitservice Logo"
-                  className="w-24 md:w-64 headerLogo"
-                />
-              </a>
-              <div
-                className="flex justify-end items-center relative"
-                onClick={() => setShowPopupOfficeAddress(true)}
-              >
-                <span className="pointer-events-none icon-map-form w-[24px] h-[24px]" />
-                <span className="pl-2  text-[#F47D32] cursor-pointer cityAddress">
-                  {city.address}
-                </span>
-              </div>
-              <div className="flex justify-end items-center relative hidden">
-                <img src={cityImg} alt="" className="w-4 h-4" />{' '}
-                <span
-                  className="pl-2 cursor-pointer text-[#F47D32] "
-                  onClick={() => {
-                    setshowPopupSelectCity(true);
-                  }}
-                >
-                  {selectedCity?.name ?? 'Выберите город'}
-                </span>
-              </div>
-            </div>
-            {showPopupSelectCity && (
-              <SelectCity
-                setSelectCity={setSelectCity}
-                setshowPopupSelectCity={setshowPopupSelectCity}
-              />
-            )}
-          </div>
-        </nav>
-      </div>
       <div className="max-w-[1280px] mx-auto h-full pb-9 lg:pb-0 px-6">
         <div className="flex flex-col md:flex-row justify-between h-full md:py-40 relative">
           <div className="lg:w-2/3 flex flex-col justify-center order-2 md:order-1 text-center md:text-left lg:text-left">
