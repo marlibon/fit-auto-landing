@@ -1,0 +1,27 @@
+:global(.slick-prev) {
+  left: -4px !important;
+  z-index: 99 !important;
+}
+:global(.slick-next) {
+  right: 66px !important;
+  z-index: 99 !important;
+}
+
+:global(.slick-prev:before),
+:global(.slick-next:before) {
+  font-size: 90px !important;
+  z-index: 99 !important;
+}
+@media (max-width: 768px) {
+  :global(.slick-prev) {
+    left: -4px !important;
+  }
+  :global(.slick-next) {
+    right: 20px !important;
+  }
+
+  :global(.slick-prev:before),
+  :global(.slick-next:before) {
+    font-size: 40px !important;
+  }
+}

@@ -32,7 +32,6 @@
 }
 .mapsContent {
   margin-bottom: 0.5rem;
-  height: 16rem;
   background-color: #e5e7eb;
 
   @media (min-width: 768px) {

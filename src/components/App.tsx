@@ -29,12 +29,16 @@ import Office from './form-record/office';
 import FooterContacts from './footer-contacts/footer-contacts';
 import PromoAndForm from './promo/promo-and-form/promo-and-form';
 import LogotipsAuto from './logotips-auto/logotips-auto';
+import GalleryModal from './gallery/gallery-modal';
+import Gallery from './gallery/gallery';
 
 function App() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isShowModalSelectOffice, setisShowModalSelectOffice] = useState(false);
   const [isShowModalFormRecord, setisShowModalFormRecord] = useState(false);
+  const [isShowModalGallery, setisShowModalGallery] = useState(false);
   const [isShowModalAddres, setisShowModalAddress] = useState(false);
+  const [indexSlideGallery, setIndexSlideGallery] = useState<number>();
   const [selectedOffice, setSelectedOffice] = useState<typeSto>();
   const [selectedCity, setSelectCity] = useState<typeCity>();
   const [showPopupSelectCity, setshowPopupSelectCity] =
@@ -46,6 +50,12 @@ function App() {
   document.title = promo.name;
   const city: Location =
     cities.find((p) => window.location.href.includes(p.slug)) || cities[1];
+
+  const openModalGallery = (index: number) => {
+    setisShowModalGallery(true);
+    setIndexSlideGallery(index);
+  };
+
   return (
     <>
       <div>
@@ -79,6 +89,7 @@ function App() {
                   ))}
               </OtherPromo> */}
               {/* <OldModals /> */}
+              <Gallery onClick={openModalGallery} city={city} />
               <FooterContacts city={city} />
               <Footer
                 setShowPopupOfficeAddress={setisShowModalAddress}
@@ -127,6 +138,16 @@ function App() {
             title="Оставьте заявку на звонок"
             subTitle="И получите точный расчет стоимости ремонта и запчастей"
           />
+        </Modal>
+      )}
+      {isShowModalGallery && (
+        <Modal
+          isLayout={true}
+          onClose={() => setisShowModalGallery(false)}
+          priority={20}
+          isFull
+        >
+          <GalleryModal indexSlide={indexSlideGallery} city={city} />
         </Modal>
       )}
     </>

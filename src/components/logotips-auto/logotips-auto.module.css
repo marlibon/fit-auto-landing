@@ -5,3 +5,8 @@
 .container {
   height: 150px;
 }
+@media (max-width: 768px) {
+  .container {
+    margin-top: 50px;
+  }
+}
