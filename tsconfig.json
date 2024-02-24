@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "resolveJsonModule": true,
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -9,14 +8,13 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
+    "noFallthroughCasesInSwitch": true,
+    "module": "CommonJS",
     "moduleResolution": "node",
-    "jsx": "react", // Вот здесь указывается значение для поддержки JSX
-    "baseUrl": "./",
-    "paths": {
-      "src/*": ["src/*"]
-    },
-    "typeRoots": ["./node_modules/@types", "./src/types"]
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.css", "src/components/footer-contacts/footer-contacts.jsx"]
+  "include": ["src"]
 }

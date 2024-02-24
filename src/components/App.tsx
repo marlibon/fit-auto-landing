@@ -8,26 +8,27 @@ import React, {
   useRef,
   useState
 } from 'react';
-import DatePicker, { registerLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import ruLocale from 'date-fns/locale/ru';
 import SelectOffice from './form-record/select-office';
 import Modal from './modal';
 import Footer from './footer';
-import Promo from './promo';
+import Promo from './promo/promo';
 import { Location, Promotion, typeCity, typeSto } from '../utils/types';
 import FormRecord from './form-record/form-record';
-import Timer from './timer';
+import Timer from './old/timer';
 import Pluses from './pluses';
 import OtherPromo from './other-promo';
-import OldModals from './old-modals';
-import DescriptionPromo from './description-promo';
+import OldModals from './old/old-modals';
+import DescriptionPromo from './promo/description-promo';
 import { Route, Routes, useLocation } from 'react-router';
 import promoServices from '../data/services.json';
 import cities from '../data/cities.json';
-import ItemPromo from './item-promo';
+import ItemPromo from './promo/item-promo';
 import Office from './form-record/office';
 import FooterContacts from './footer-contacts/footer-contacts';
+import PromoAndForm from './promo/promo-and-form/promo-and-form';
+import LogotipsAuto from './logotips-auto/logotips-auto';
 
 function App() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -65,17 +66,19 @@ function App() {
                 city={city}
               />
               <FormRecord promo={promo} isIncludes={false} city={city} />
-              <DescriptionPromo promo={promo} city={city} />
-              <Timer />
+              <LogotipsAuto />
+              {/* <DescriptionPromo promo={promo} city={city} /> */}
+              <PromoAndForm promo={promo} city={city} />
+              {/* <Timer /> */}
               <Pluses />
-              <OtherPromo>
+              {/* <OtherPromo>
                 {promoServices
                   .filter((p) => p.slug !== promo.slug)
                   .map((pr) => (
                     <ItemPromo promo={pr} />
                   ))}
-              </OtherPromo>
-              <OldModals />
+              </OtherPromo> */}
+              {/* <OldModals /> */}
               <FooterContacts city={city} />
               <Footer
                 setShowPopupOfficeAddress={setisShowModalAddress}
@@ -120,6 +123,7 @@ function App() {
             isModal={true}
             promo={promo}
             city={city}
+            isServices={true}
             title="Оставьте заявку на звонок"
             subTitle="И получите точный расчет стоимости ремонта и запчастей"
           />

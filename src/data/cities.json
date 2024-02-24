@@ -6,10 +6,7 @@
     "address": "Подольск, ул. Клемента Готвальда, 4Б",
     "lat": 55.42098,
     "lng": 37.53167,
-    "img1": "sto-podolsk-1.jpeg",
-    "img2": "sto-podolsk-2.jpeg",
-    "img3": "sto-podolsk-3.jpeg",
-    "img4": "sto-podolsk-4.jpeg",
+    "images": ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg"],
     "tel": "+7 (499) 130-29-60 доб. 998"
   },
   {
@@ -19,11 +16,7 @@
     "address": "Москва, Партийный переулок, 1, к4",
     "lat": 55.72064,
     "lng": 37.63451,
-    "img1": "office-moskow.jpeg",
-    "img2": "sto-moskva-2.jpeg",
-    "img3": "sto-moskva-3.jpeg",
-    "img4": "sto-moskva-1.jpeg",
-    "img5": "sto-moskva-4.jpeg",
+    "images": ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpeg", "11.jpeg"],
     "tel": "+7 (499) 402-91-12 доб. 492"
   }
 ]

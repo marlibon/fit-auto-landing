@@ -1,0 +1,7 @@
+.img {
+  height: 100px;
+  object-fit: contain;
+}
+.container {
+  height: 150px;
+}

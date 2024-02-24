@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Modal from '../modal';
-import Preloader from '../Preloader/Preloader';
-import sendOrder from 'src/utils/sendOrder';
-import { Location, Promotion } from 'src/utils/types';
+import sendOrder from '../../../src/utils/sendOrder';
+import { Location, Promotion } from '../../../src/utils/types';
 import SelectOptions from './select-options';
 import Office from './office';
+import Preloader from '../preloader/Preloader';
 interface Props {
   isIncludes: boolean;
   isModal?: boolean;
@@ -12,6 +12,8 @@ interface Props {
   city: Location;
   title?: string;
   subTitle?: string;
+  text?: string;
+  isServices?: boolean;
 }
 const FormRecord: React.FC<Props> = ({
   isIncludes,
@@ -19,7 +21,9 @@ const FormRecord: React.FC<Props> = ({
   promo,
   city,
   title,
-  subTitle
+  subTitle,
+  text,
+  isServices
 }) => {
   const [name, setName] = useState('');
   const [tel, setTel] = useState('');
@@ -68,11 +72,16 @@ const FormRecord: React.FC<Props> = ({
             <h5 className="text-2xl mb-4">{subTitle}</h5>
           </div>
         )}
+        {text && (
+          <div className="flex justify-between items-center">
+            <h5 className="text-1xl">{text}</h5>
+          </div>
+        )}
         <div>
           <form className="bg-white w-full flex flex-col">
             <div className="flex flex-col items-center mb-4 flex-wrap gap-4 md:flex-row" />
             <div className="flex flex-col items-center mb-4 md:flex-row">
-              <div className="relative w-full mb-4 mr-0 md:w-1/2 md:mb-0 md:mr-2 hidden">
+              {/* <div className="relative w-full mb-4 mr-0 md:w-1/2 md:mb-0 md:mr-2 hidden">
                 <div
                   onClick={() => {
                     // setisShowModalSelectOffice(true);
@@ -87,7 +96,7 @@ const FormRecord: React.FC<Props> = ({
                   />
                   <span className="pointer-events-none icon-map-form w-[24px] h-[24px] absolute top-[16px] right-[16px]" />
                 </div>
-              </div>
+              </div> */}
               <div className="w-full flex justify-between items-center md:w-1/2 md:ml-2">
                 <div className="form-item w-1/2 mr-2 relative hidden">
                   <input
@@ -100,7 +109,7 @@ const FormRecord: React.FC<Props> = ({
 
                   <span className="pointer-events-none icon-calendar w-[24px] h-[24px] absolute top-[16px] right-[16px]" />
                 </div>
-                <div className="form-item w-1/2 ml-2 relative hidden">
+                {/* <div className="form-item w-1/2 ml-2 relative hidden">
                   <input
                     id="timepicker"
                     type="text"
@@ -112,7 +121,7 @@ const FormRecord: React.FC<Props> = ({
                     type="button"
                     className="pointer-events-none btn-input-arrow w-[10px] h-[8px] absolute top-[26px] right-[16px]"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="flex flex-col items-center mb-4 md:flex-row">
@@ -145,7 +154,7 @@ const FormRecord: React.FC<Props> = ({
                 </div>
               </div>
             </div>
-            <SelectOptions
+            {/* <SelectOptions
               options={
                 [
                   'Диагностика ходовой',
@@ -155,17 +164,19 @@ const FormRecord: React.FC<Props> = ({
               }
               selected={selected}
               setSelected={setSelected}
-            />
-            <div className="flex flex-col items-center mb-4">
-              <div className="w-full relative">
-                <input
-                  id="services"
-                  type="text"
-                  placeholder="Напишите желаемые услуги"
-                  className="text-base text-[#ababab] w-full truncate cursor-pointer border border-transparent h-[58px] rounded-lg bg-[#fafafa] p-4 leading-tight focus:outline-none focus:bg-orange-50 focus:border-gray-200"
-                />{' '}
+            /> */}
+            {isServices && (
+              <div className="flex flex-col items-center mb-4">
+                <div className="w-full relative">
+                  <input
+                    id="services"
+                    type="text"
+                    placeholder="Напишите желаемые услуги"
+                    className="text-base text-[#ababab] w-full truncate cursor-pointer border border-transparent h-[58px] rounded-lg bg-[#fafafa] p-4 leading-tight focus:outline-none focus:bg-orange-50 focus:border-gray-200"
+                  />{' '}
+                </div>
               </div>
-            </div>
+            )}
             <div className="flex flex-col items-center pt-4 border-t border-gray-300 md:flex-row">
               <p className="text-sm font-normal text-gray-400 pr-6 order-2 md:order-1">
                 Нажимая на кнопку Отправить, вы принимаете{' '}

@@ -5,7 +5,7 @@ import about3 from '../images/about-3.svg';
 
 const Pluses = () => {
   return (
-    <section className="section about bg-zinc-900 lg:rounded-3xl lg:m-5 lg:mb-24">
+    <section className="section mb-4 about bg-zinc-900 lg:rounded-3xl lg:m-5 lg:mb-24">
       <div className="max-w-[1280px] mx-auto py-12 lg:py-28 px-6">
         <h3 className="text-white text-4xl lg:text-5xl font-bold mb-16">
           Преимущества<b className="text-[#F47D32]"> FIT&nbsp;SERVICE</b>

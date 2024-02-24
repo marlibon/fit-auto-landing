@@ -7,7 +7,7 @@ import telegram from '../images/telegram.e0c40e1.svg';
 import tiktok from '../images/tik-tok.7721b78.svg';
 import vk from '../images/vk.1b88caa.svg';
 import ok from '../images/ok.67761cd.svg';
-import { Location } from 'src/utils/types';
+import { Location } from './../../src/utils/types';
 interface Props {
   city: Location;
   setShowPopupOfficeAddress: React.Dispatch<React.SetStateAction<boolean>>;
