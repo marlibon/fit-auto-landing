@@ -8,9 +8,16 @@ import { getEndOfNextWeek } from '../../../utils/utils';
 interface Props {
   promo: Promotion;
   city: Location;
+  onShowPopupFailed: () => void;
+  onShowPopupOk: () => void;
 }
 
-const PromoAndForm: React.FC<Props> = ({ promo, city }) => {
+const PromoAndForm: React.FC<Props> = ({
+  promo,
+  city,
+  onShowPopupOk,
+  onShowPopupFailed
+}) => {
   return (
     <section className="section max-w-[1280px] mx-auto px-6 mb-4 lg:mb-24">
       <div className={styles['promo-list-main']}>
@@ -29,6 +36,8 @@ const PromoAndForm: React.FC<Props> = ({ promo, city }) => {
             isIncludes={true}
             title="Запишитесь по акции"
             text={'Действует до ' + getEndOfNextWeek()}
+            onShowPopupOk={onShowPopupOk}
+            onShowPopupFailed={onShowPopupFailed}
           />
         </div>
       </div>

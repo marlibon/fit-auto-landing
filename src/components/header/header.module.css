@@ -19,7 +19,7 @@
 .iconTel {
   display: block;
 }
-@media (min-width: 1100px) {
+@media (min-width: 1150px) {
   .iconTel {
     display: none;
   }

@@ -1,19 +1,23 @@
 import React from 'react';
-import logoFooter from '../images/logo-footer.svg';
-import telegram2 from '../images/telegram2.0deae27.svg';
-import viber from '../images/viber.c8c5409.svg';
-import wsup from '../images/wsup.9f9fbd3.svg';
-import telegram from '../images/telegram.e0c40e1.svg';
-import tiktok from '../images/tik-tok.7721b78.svg';
-import vk from '../images/vk.1b88caa.svg';
-import ok from '../images/ok.67761cd.svg';
-import { Location } from './../../src/utils/types';
-import Header from './header/header';
+import clsx from 'clsx';
+import logoFooter from '../../images/logo-footer.svg';
+import telegram from '../../images/telegram.e0c40e1.svg';
+import tiktok from '../../images/tik-tok.7721b78.svg';
+import vk from '../../images/vk.1b88caa.svg';
+import ok from '../../images/ok.67761cd.svg';
+import { Location } from '../../utils/types';
+import styles from './footer.module.css';
+
 interface Props {
   city: Location;
   setShowPopupOfficeAddress: React.Dispatch<React.SetStateAction<boolean>>;
+  setisShowModalFormQuestion: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const Footer: React.FC<Props> = ({ city, setShowPopupOfficeAddress }) => {
+const Footer: React.FC<Props> = ({
+  city,
+  setShowPopupOfficeAddress,
+  setisShowModalFormQuestion
+}) => {
   return (
     <footer className="footer bg-[#F2F6F7]">
       <div className="footer__inner max-w-[1280px] w-full mx-auto py-4 lg:py-9 px-4">
@@ -39,6 +43,9 @@ const Footer: React.FC<Props> = ({ city, setShowPopupOfficeAddress }) => {
               </li>
             </ul>
           </div>
+          <a href={'tel:' + city.tel} className={styles.tel}>
+            {city.tel}
+          </a>
           <div className="hidden">
             <ul className="flex items-center">
               <li className="mr-10 lg:mr-6">
@@ -114,36 +121,18 @@ const Footer: React.FC<Props> = ({ city, setShowPopupOfficeAddress }) => {
               Политика обработки персональных данных
             </a>
           </div>
-          <div className="w-full lg:w-3/12 order-1 lg:order-3 pb-6 lg:pb-0 mb-6 lg:mb-0 border-b lg:border-b-0 border-gray-200">
-            <ul className="flex items-center justify-start ml-0 lg:ml-[90px]  hidden">
-              <li className="mr-6">
-                <a
-                  href="https://chats.viber.com/fitservice/ru"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={viber} alt="" />
-                </a>
-              </li>
-              <li className="mr-6">
-                <a
-                  href="https://telegram.im/@FiTServiceK_bot"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={telegram2} alt="" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://api.whatsapp.com/send?phone=79059458308&text=%d0%94%d0%be%d0%b1%d1%80%d1%8b%d0%b9%20%d0%b4%d0%b5%d0%bd%d1%8c%21%20%d0%9c%d0%b5%d0%bd%d1%8f%20%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d0%b5%d1%81%d1%83%d0%b5%d1%82&source=&data=&app_absent="
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={wsup} alt="" />
-                </a>
-              </li>
-            </ul>
+          <div
+            className={clsx(
+              'w-full lg:w-3/12 order-1 lg:order-3 pb-6 lg:pb-0 mb-6 lg:mb-0 border-b lg:border-b-0 border-gray-200',
+              styles.blockOrder
+            )}
+          >
+            <button
+              className={styles.buttonOrder}
+              onClick={() => setisShowModalFormQuestion(true)}
+            >
+              ЗАДАТЬ ВОПРОС
+            </button>
           </div>
         </div>
       </div>

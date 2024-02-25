@@ -7,8 +7,15 @@ import { urlImages } from '../../../src/utils/constants';
 interface Props {
   promo: Promotion;
   city: Location;
+  onShowPopupFailed: () => void;
+  onShowPopupOk: () => void;
 }
-const DescriptionPromo: React.FC<Props> = ({ promo, city }) => {
+const DescriptionPromo: React.FC<Props> = ({
+  promo,
+  city,
+  onShowPopupFailed,
+  onShowPopupOk
+}) => {
   return (
     <section className="section description bg-[#fafafa] rounded-3xl md:m-5 lg:mb-4 overflow-hidden relative lg:top-[-70px]">
       <div className="max-w-[1280px] mx-auto px-6">
@@ -27,7 +34,13 @@ const DescriptionPromo: React.FC<Props> = ({ promo, city }) => {
                 Подробные условия акции
               </button>
             </div>
-            <FormRecord promo={promo} isIncludes={true} city={city} />
+            <FormRecord
+              onShowPopupFailed={onShowPopupFailed}
+              onShowPopupOk={onShowPopupOk}
+              promo={promo}
+              isIncludes={true}
+              city={city}
+            />
           </div>
           <div
             className="w-full lg:w-1/2 order-1 lg:order-2 relative h-[380px] lg:h-auto"

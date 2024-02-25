@@ -1,7 +1,8 @@
 import Slider, { LazyLoadTypes } from 'react-slick';
 
 export const API_KEY = '7b7a0852-b523-41ff-a804-8be86af2e554';
-export const url = 'http://servis-paveleckaya.ru';
+// export const url = 'http://servis-paveleckaya.ru';
+export const url = window.location.origin;
 export const urlImages = url + '/images/';
 
 export const urlProductsImages = urlImages + 'products/';

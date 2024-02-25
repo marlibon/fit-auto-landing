@@ -1,30 +1,16 @@
 import '../tailwind.css';
 import '../styles.css';
 
-import React, {
-  LegacyRef,
-  MutableRefObject,
-  useEffect,
-  useRef,
-  useState
-} from 'react';
+import { useState } from 'react';
 import 'react-datepicker/dist/react-datepicker.css';
-import ruLocale from 'date-fns/locale/ru';
 import SelectOffice from './form-record/select-office';
 import Modal from './modal';
-import Footer from './footer';
-import Promo from './promo/promo';
+import Footer from './footer/footer';
 import { Location, Promotion, typeCity, typeSto } from '../utils/types';
 import FormRecord from './form-record/form-record';
-import Timer from './old/timer';
 import Pluses from './pluses';
-import OtherPromo from './other-promo';
-import OldModals from './old/old-modals';
-import DescriptionPromo from './promo/description-promo';
-import { Route, Routes, useLocation } from 'react-router';
 import promoServices from '../data/services.json';
 import cities from '../data/cities.json';
-import ItemPromo from './promo/item-promo';
 import Office from './form-record/office';
 import Products from './Products/products';
 import PromoDefault from './Promo-default/promo-default';
@@ -36,23 +22,20 @@ import Gallery from './gallery/gallery';
 import Header from './header/header';
 
 function App() {
-  const sectionRef = useRef<HTMLDivElement>(null);
   const [isShowModalSelectOffice, setisShowModalSelectOffice] = useState(false);
   const [isShowModalFormRecord, setisShowModalFormRecord] = useState(false);
+  const [isShowModalFormQuestion, setisShowModalFormQuestion] = useState(false);
   const [isShowModalGallery, setisShowModalGallery] = useState(false);
   const [isShowModalAddres, setisShowModalAddress] = useState(false);
+  const [isShowPopupOk, setIsShowPopupOk] = useState(false);
+  const [isShowPopupFailed, setIsShowPopupFailed] = useState(false);
   const [indexSlideGallery, setIndexSlideGallery] = useState<number>();
   const [selectedOffice, setSelectedOffice] = useState<typeSto>();
-  const [selectedCity, setSelectCity] = useState<typeCity>();
-  const [showPopupSelectCity, setshowPopupSelectCity] =
-    useState<boolean>(false);
-  const location = useLocation();
-  const promo: Promotion =
-    promoServices.find((p) => '/' + p.slug === location.pathname) ||
-    promoServices[0];
+  useState<boolean>(false);
+  const promo: Promotion = promoServices[0];
   document.title = promo.name;
   const city: Location =
-    cities.find((p) => window.location.href.includes(p.slug)) || cities[1];
+    cities.find((c) => window.location.href.includes(c.slug)) || cities[1];
 
   const openModalGallery = (index: number) => {
     setisShowModalGallery(true);
@@ -84,24 +67,23 @@ function App() {
                   setisShowModalFormRecord(true);
                 }}
               />
-              {/* <FormRecord promo={promo} isIncludes={false} city={city} /> */}
               <LogotipsAuto />
-              {/* <DescriptionPromo promo={promo} city={city} /> */}
               <Pluses />
-              <PromoAndForm promo={promo} city={city} />
-              {/* <Timer /> */}
-              {/* <OtherPromo>
-                {promoServices
-                  .filter((p) => p.slug !== promo.slug)
-                  .map((pr) => (
-                    <ItemPromo promo={pr} />
-                  ))}
-              </OtherPromo> */}
-              {/* <OldModals /> */}
+              <PromoAndForm
+                onShowPopupOk={() => {
+                  setIsShowPopupOk(true);
+                }}
+                onShowPopupFailed={() => {
+                  setIsShowPopupFailed(true);
+                }}
+                promo={promo}
+                city={city}
+              />
               <Gallery onClick={openModalGallery} city={city} />
               <FooterContacts city={city} />
               <Footer
                 setShowPopupOfficeAddress={setisShowModalAddress}
+                setisShowModalFormQuestion={setisShowModalFormQuestion}
                 city={city}
               />
             </div>
@@ -148,6 +130,12 @@ function App() {
             title="Оставьте заявку на звонок"
             subTitle="И получите точный расчет стоимости ремонта и запчастей"
             onClose={() => setisShowModalFormRecord(false)}
+            onShowPopupOk={() => {
+              setIsShowPopupOk(true);
+            }}
+            onShowPopupFailed={() => {
+              setIsShowPopupFailed(true);
+            }}
           />
         </Modal>
       )}
@@ -159,6 +147,63 @@ function App() {
           isFull
         >
           <GalleryModal indexSlide={indexSlideGallery} city={city} />
+        </Modal>
+      )}
+      {isShowPopupOk && (
+        <Modal
+          onClose={() => {
+            setIsShowPopupOk(false);
+          }}
+        >
+          <h5 className="text-4xl font-bold mb-6 md:text-2xl titleModal">
+            Спасибо за заявку!
+          </h5>
+          <div className="flex justify-between items-center">
+            <h5 className="text-1xl subtitleModal">
+              В ближайшее время мы вам перезвоним
+            </h5>
+          </div>
+        </Modal>
+      )}
+      {isShowPopupFailed && (
+        <Modal
+          onClose={() => {
+            setIsShowPopupFailed(false);
+          }}
+        >
+          <h5 className="text-4xl font-bold mb-6 md:text-2xl titleModal">
+            Произошла какая то ошибка. Мы решаем эту проблему.
+          </h5>
+          <div className="flex justify-between items-center">
+            <h5 className="text-1xl subtitleModal">
+              Пожалуйста, свяжитесь с нами по телефону {city.tel}
+            </h5>
+          </div>
+        </Modal>
+      )}
+      {isShowModalFormQuestion && (
+        <Modal
+          isLayout={false}
+          onClose={() => setisShowModalFormQuestion(false)}
+          priority={999}
+        >
+          <FormRecord
+            isIncludes={false}
+            isModal={true}
+            promo={promo}
+            city={city}
+            isServices={true}
+            placeholderServices={'Напишите ваш вопрос'}
+            title="Напишите ваш вопрос "
+            subTitle="И оставьте контакты, по которым можно связаться для ответа"
+            onClose={() => setisShowModalFormQuestion(false)}
+            onShowPopupOk={() => {
+              setIsShowPopupOk(true);
+            }}
+            onShowPopupFailed={() => {
+              setIsShowPopupFailed(true);
+            }}
+          />
         </Modal>
       )}
     </>

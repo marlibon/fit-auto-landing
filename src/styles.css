@@ -211,6 +211,11 @@
   }
 }
 
+@media (min-width: 1550px) {
+  .fullHd {
+    width: 70%;
+  }
+}
 @media (max-width: 550px) {
   .headerLogo {
     width: 12rem;
@@ -228,4 +233,26 @@
   [id*='id_'] img {
     display: none;
   }
+}
+.titleModal {
+  width: 95%;
+}
+
+@media (max-width: 550px) {
+  .titleModal {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+  .subtitleModal {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .btn-close-map {
+    background-color: transparent;
+  }
+}
+
+.btn-close-map {
+  top: 8px;
+  right: 10px;
 }

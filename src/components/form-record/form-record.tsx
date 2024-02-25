@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import clsx from 'clsx';
 import Modal from '../modal';
 import sendOrder from '../../../src/utils/sendOrder';
 import { Location, Promotion } from '../../../src/utils/types';
@@ -15,6 +16,9 @@ interface Props {
   text?: string;
   isServices?: boolean;
   onClose?: () => void;
+  onShowPopupFailed: () => void;
+  onShowPopupOk: () => void;
+  placeholderServices?: string;
 }
 const FormRecord: React.FC<Props> = ({
   isIncludes,
@@ -25,35 +29,38 @@ const FormRecord: React.FC<Props> = ({
   subTitle,
   text,
   isServices,
-  onClose
+  onClose,
+  onShowPopupFailed,
+  onShowPopupOk,
+  placeholderServices
 }) => {
   const [name, setName] = useState('');
   const [tel, setTel] = useState('');
-  const [showPopupOk, setshowPopupOk] = useState(false);
-  const [showPopupFailed, setshowPopupFailed] = useState(false);
+  const [serviceText, setServiceText] = useState('');
   const [loading, setLoading] = useState(false);
   const [selected, setSelected] = useState<string[]>([]);
 
   const handleSubmit = () => {
-    setshowPopupOk(true);
     setLoading(true);
-    setName('');
-    setTel('');
-    setSelected([]);
+
     sendOrder(
-      `Имя: ${name};%0AТелефон ${tel};%0AПромо: ${promo.name};${selected.length ? '%0AУточнение: %0A' + selected.join(';%0A') : ''};${'%0A%0AГород:' + city.name}`,
+      `Имя: ${name};%0AТелефон ${tel};%0AПромо: ${promo.name};${selected.length ? '%0AУточнение: %0A' + selected.join(';%0A') : ''};${serviceText ? '%0AЖелаемые услуги: %0A' + serviceText : ''};${'%0A%0AГород:' + city.name}`,
       () => {
-        setshowPopupOk(true);
+        onShowPopupOk();
         setLoading(false);
         onClose?.();
       },
       () => {
-        setshowPopupFailed(true);
+        onShowPopupFailed();
         setLoading(false);
         onClose?.();
       },
       city.slug
     );
+    setName('');
+    setTel('');
+    setServiceText('');
+    setSelected([]);
   };
 
   if (loading) {
@@ -67,13 +74,15 @@ const FormRecord: React.FC<Props> = ({
         style={isModal ? { top: '0' } : {}}
       >
         <div className="flex justify-between items-center">
-          <h5 className="text-4xl font-bold mb-6">
+          <h5
+            className={clsx('text-4xl font-bold mb-6 md:text-2xl titleModal')}
+          >
             {title ? title : 'Оставьте заявку на звонок'}
           </h5>
         </div>
         {subTitle && (
           <div className="flex justify-between items-center">
-            <h5 className="text-2xl mb-4">{subTitle}</h5>
+            <h5 className={clsx('text-2xl mb-4 subtitleModal')}>{subTitle}</h5>
           </div>
         )}
         {text && (
@@ -85,22 +94,6 @@ const FormRecord: React.FC<Props> = ({
           <form className="bg-white w-full flex flex-col">
             <div className="flex flex-col items-center mb-4 flex-wrap gap-4 md:flex-row" />
             <div className="flex flex-col items-center mb-4 md:flex-row">
-              {/* <div className="relative w-full mb-4 mr-0 md:w-1/2 md:mb-0 md:mr-2 hidden">
-                <div
-                  onClick={() => {
-                    // setisShowModalSelectOffice(true);
-                  }}
-                >
-                  <input
-                    id="geo-modal"
-                    type="text"
-                    placeholder="Выберите автосервис"
-                    // value={selectedOffice?.name ?? ''}
-                    className="max-w-full text-[#ababab] truncate border border-transparent h-[58px] rounded-lg bg-[#fafafa] appearance-none w-full cursor-pointer p-4 leading-tight focus:outline-none focus:bg-orange-50 focus:border-gray-200"
-                  />
-                  <span className="pointer-events-none icon-map-form w-[24px] h-[24px] absolute top-[16px] right-[16px]" />
-                </div>
-              </div> */}
               <div className="w-full flex justify-between items-center md:w-1/2 md:ml-2">
                 <div className="form-item w-1/2 mr-2 relative hidden">
                   <input
@@ -113,19 +106,6 @@ const FormRecord: React.FC<Props> = ({
 
                   <span className="pointer-events-none icon-calendar w-[24px] h-[24px] absolute top-[16px] right-[16px]" />
                 </div>
-                {/* <div className="form-item w-1/2 ml-2 relative hidden">
-                  <input
-                    id="timepicker"
-                    type="text"
-                    placeholder="Время"
-                    readOnly={true}
-                    className="custom-scroll text-[#ababab] border border-transparent h-[58px] rounded-lg bg-[#fafafa] appearance-none w-full p-4 leading-tight cursor-pointer focus:outline-none focus:bg-orange-50 focus:border-gray-200"
-                  />
-                  <button
-                    type="button"
-                    className="pointer-events-none btn-input-arrow w-[10px] h-[8px] absolute top-[26px] right-[16px]"
-                  />
-                </div> */}
               </div>
             </div>
             <div className="flex flex-col items-center mb-4 md:flex-row">
@@ -158,24 +138,16 @@ const FormRecord: React.FC<Props> = ({
                 </div>
               </div>
             </div>
-            {/* <SelectOptions
-              options={
-                [
-                  'Диагностика ходовой',
-                  'Замена масла',
-                  'Техническое обслуживание двигателя'
-                ] ?? promo.options
-              }
-              selected={selected}
-              setSelected={setSelected}
-            /> */}
             {isServices && (
               <div className="flex flex-col items-center mb-4">
                 <div className="w-full relative">
                   <input
                     id="services"
+                    onChange={(e) => setServiceText(e.target.value)}
                     type="text"
-                    placeholder="Напишите желаемые услуги"
+                    placeholder={
+                      placeholderServices ?? 'Напишите желаемые услуги'
+                    }
                     className="text-base text-[#ababab] w-full truncate cursor-pointer border border-transparent h-[58px] rounded-lg bg-[#fafafa] p-4 leading-tight focus:outline-none focus:bg-orange-50 focus:border-gray-200"
                   />{' '}
                 </div>
@@ -231,31 +203,6 @@ const FormRecord: React.FC<Props> = ({
           </div> */}
         </div>
       </div>
-      {showPopupOk && (
-        <Modal
-          onClose={() => {
-            setshowPopupOk(false);
-          }}
-        >
-          <h5 className="form-success__title text-4xl font-bold md:w-auto mb-4 mt-4 text-center">
-            Спасибо за заявку! В ближайшее время мы вам перезвоним
-          </h5>
-          <Office city={city} />
-        </Modal>
-      )}
-      {showPopupFailed && (
-        <Modal
-          onClose={() => {
-            setshowPopupFailed(false);
-          }}
-        >
-          <h5 className="form-success__title text-4xl font-bold md:w-auto mb-4 mt-4 text-center">
-            {' '}
-            Произошла какая то ошибка. Мы решаем эту проблему.
-          </h5>
-          <p>Пожалуйста, свяжитесь с нами по телефону {city.tel}</p>
-        </Modal>
-      )}
     </>
   );
 };

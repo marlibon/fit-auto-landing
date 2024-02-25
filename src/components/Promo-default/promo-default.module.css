@@ -138,11 +138,16 @@
     margin-top: 10%;
   }
 }
-
+@media screen and (max-width: 639px) and (max-height: 639px) {
+  .promo-default {
+    flex-direction: column;
+    height: 60vh;
+  }
+}
 @media screen and (max-width: 639px) {
   .promo-default {
     flex-direction: column;
-    height: 100vh;
+    height: 90vh;
   }
 
   .promo-default__title-button {
@@ -167,7 +172,7 @@
 
 @media screen and (max-width: 469px) {
   .promo-default {
-    height: 100vh;
+    height: 80vh;
   }
 
   .promo-default__title {

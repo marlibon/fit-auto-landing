@@ -1,0 +1,53 @@
+.tel {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #f47d32;
+}
+
+@media (max-width: 650px) {
+  .tel {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+.blockOrder {
+  display: flex;
+  justify-content: center;
+}
+.buttonOrder {
+  min-width: 180px;
+  height: 48px;
+  margin: 0;
+  padding: 0 40px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: #f47d32;
+
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  background-color: #ffffff;
+
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+
+  letter-spacing: 0.05em;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  transition: 0.5s;
+}
+
+.buttonOrder:hover,
+.buttonOrder:focus,
+.buttonOrder:active {
+  color: #ffffff;
+  background-color: #f47d32;
+  border: 1px solid #ffffff;
+}
+@media (max-width: 1023px) {
+  .blockOrder {
+    justify-content: start;
+    margin-top: 35px;
+  }
+}

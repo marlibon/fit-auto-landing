@@ -6,7 +6,7 @@ export class Api {
     // это корректный для шефчебурек. а ниже это питстоп this._serverTelegram = "https://api.telegram.org/bot6128124968:AAEsrI21MpH-C_0qSfrF4eDOcMEBrst3WYQ/sendMessage?chat_id=-1001857657187&parse_mode=html"
     //this._serverTelegram = "https://api.telegram.org/bot5506734715:AAGYKstSIFt0GGWmthQ8_ScDOqHnQmAbVtU/sendMessage?chat_id=-1001698638520&parse_mode=html";
     this._urlBackServerForTelegram =
-      'https://zagriev.ru/back/sendMessageTelegram.php';
+      window.location.origin + '/back/sendMessageTelegram.php';
   }
 
   sendTelegramBackend = (message = 'пустое сообщение', city = 'moskva') => {
@@ -17,7 +17,9 @@ export class Api {
         'Content-Type': 'application/json',
         Authorization: TOKEN_BACKEND_ORDERS
       }
-    }).then((data) => data.json());
+    })
+      .then((data) => data.json())
+      .catch((error) => console.error(error));
   };
 
   sendTelegram = (message) => {

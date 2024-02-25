@@ -2,8 +2,7 @@ import React, { FC } from 'react';
 import clsx from 'clsx';
 import phoneIcon from '../../images/phone_icon.svg';
 import logoOrange from '../../images/logo-orange.svg';
-import cityImg from '../../images/city.svg';
-import { Location, Promotion } from '../../utils/types';
+import { Location } from '../../utils/types';
 import styles from './header.module.css';
 
 interface Props {
@@ -41,15 +40,6 @@ const Header: FC<Props> = ({ city, setShowPopupOfficeAddress }) => {
                   {city.address}
                 </span>
               </div>
-              {/* <button
-                type="button"
-                className={clsx(
-                  'btn btn-default bg-[#F47D32] h-[54px] w-full lg:w-[158px] text-white font-medium rounded-lg mr-0 lg:mr-6 mb-2 lg:mb-0 hover:bg-orange-600',
-                  styles.button
-                )}
-              >
-                Записаться
-              </button> */}
             </div>
             <a href={'tel:' + city.tel} className={styles.tel}>
               {city.tel}
@@ -57,25 +47,7 @@ const Header: FC<Props> = ({ city, setShowPopupOfficeAddress }) => {
             <a href={'tel:' + city.tel} className={styles.iconTel}>
               <img src={phoneIcon} alt="" />
             </a>
-
-            {/* <div className="flex justify-end items-center relative hidden">
-            <img src={cityImg} alt="" className="w-4 h-4" />{' '}
-            <span
-              className="pl-2 cursor-pointer text-[#F47D32] "
-              onClick={() => {
-                setshowPopupSelectCity(true);
-              }}
-            >
-              {selectedCity?.name ?? 'Выберите город'}
-            </span>
-          </div> */}
           </div>
-          {/* {showPopupSelectCity && (
-          <SelectCity
-            setSelectCity={setSelectCity}
-            setshowPopupSelectCity={setshowPopupSelectCity}
-          />
-        )} */}
         </div>
       </nav>
     </section>

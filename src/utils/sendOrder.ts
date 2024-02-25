@@ -24,6 +24,7 @@ function sendOrder(
     .sendTelegramBackend(text, city)
     .then((res) => {
       if (!res) {
+        orderNotCompleted();
         return Promise.reject(`Ошибка получения данных`);
       } else {
         orderCompleted();
