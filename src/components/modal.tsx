@@ -37,7 +37,7 @@ const Modal: React.FC<ModalProps> = ({
       style={{ zIndex: priority }}
     >
       <div
-        className={`${isLayout ? 'w-full fullHd bg-white mx-auto shadow rounded-2xl border-t-2 border-[#F47D32] p-4' : ''} ${isFull ? '' : ' md:w-[70%] '} relative`}
+        className={`${isLayout ? 'w-full bg-white mx-auto shadow rounded-2xl border-t-2 border-[#F47D32] p-4' : ''} ${isFull ? '' : ' fullHd md:w-[70%] '} fullHd relative`}
         onClick={(e) => e.stopPropagation()}
       >
         {children}{' '}

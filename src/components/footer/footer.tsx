@@ -7,6 +7,7 @@ import vk from '../../images/vk.1b88caa.svg';
 import ok from '../../images/ok.67761cd.svg';
 import { Location } from '../../utils/types';
 import styles from './footer.module.css';
+import { cleanTelNumber } from '../../utils/utils';
 
 interface Props {
   city: Location;
@@ -43,7 +44,7 @@ const Footer: React.FC<Props> = ({
               </li>
             </ul>
           </div>
-          <a href={'tel:' + city.tel} className={styles.tel}>
+          <a href={'tel:' + cleanTelNumber(city.tel)} className={styles.tel}>
             {city.tel}
           </a>
           <div className="hidden">

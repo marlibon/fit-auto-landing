@@ -1,7 +1,7 @@
 import '../tailwind.css';
 import '../styles.css';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import 'react-datepicker/dist/react-datepicker.css';
 import SelectOffice from './form-record/select-office';
 import Modal from './modal';
@@ -31,11 +31,25 @@ function App() {
   const [isShowPopupFailed, setIsShowPopupFailed] = useState(false);
   const [indexSlideGallery, setIndexSlideGallery] = useState<number>();
   const [selectedOffice, setSelectedOffice] = useState<typeSto>();
-  useState<boolean>(false);
+  const [city, updateCity] = useState<Location>(
+    cities.find((c) => window.location.href.includes(c.slug)) || cities[1]
+  );
   const promo: Promotion = promoServices[0];
   document.title = promo.name;
-  const city: Location =
-    cities.find((c) => window.location.href.includes(c.slug)) || cities[1];
+
+  useEffect(() => {
+    let params = new URLSearchParams(window.location.search);
+    if (params.get('utm_content') != null) {
+      //@ts-ignore
+      const matchResult = params.get('utm_content').match(/\d+/);
+      if (matchResult != null && Number(matchResult[0])) {
+        updateCity({
+          ...city,
+          tel: city.phoneNumbers[Number(matchResult[0])] || city.tel
+        });
+      }
+    }
+  }, []);
 
   const openModalGallery = (index: number) => {
     setisShowModalGallery(true);

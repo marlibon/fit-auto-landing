@@ -213,7 +213,12 @@
 
 @media (min-width: 1550px) {
   .fullHd {
-    width: 70%;
+    width: 60%;
+  }
+}
+@media (min-width: 1850px) {
+  .fullHd {
+    width: 45%;
   }
 }
 @media (max-width: 550px) {

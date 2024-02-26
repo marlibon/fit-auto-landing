@@ -4,6 +4,7 @@ import phoneIcon from '../../images/phone_icon.svg';
 import logoOrange from '../../images/logo-orange.svg';
 import { Location } from '../../utils/types';
 import styles from './header.module.css';
+import { cleanTelNumber } from '../../utils/utils';
 
 interface Props {
   city: Location;
@@ -41,10 +42,13 @@ const Header: FC<Props> = ({ city, setShowPopupOfficeAddress }) => {
                 </span>
               </div>
             </div>
-            <a href={'tel:' + city.tel} className={styles.tel}>
+            <a href={'tel:' + cleanTelNumber(city.tel)} className={styles.tel}>
               {city.tel}
             </a>
-            <a href={'tel:' + city.tel} className={styles.iconTel}>
+            <a
+              href={'tel:' + cleanTelNumber(city.tel)}
+              className={styles.iconTel}
+            >
               <img src={phoneIcon} alt="" />
             </a>
           </div>

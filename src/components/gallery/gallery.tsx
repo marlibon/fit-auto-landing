@@ -28,7 +28,11 @@ const Gallery: React.FC<Props> = ({ city, onClick }) => {
               <img
                 key={index}
                 src={urlImages + 'sto/small/' + img}
-                className={clsx(styles.img, index === 0 && styles.first)}
+                className={clsx(
+                  styles.img,
+                  index === 0 && styles.first,
+                  'cursor-pointer'
+                )}
                 onClick={() => onClick(index)}
               />
             ))}
