@@ -45,5 +45,6 @@ export type Location = {
   lng: number;
   images: string[];
   tel: string;
+  extNumber?: string;
   phoneNumbers: string[];
 };

@@ -3,6 +3,7 @@
   flex-direction: column;
   /* justify-content: flex-start; */
   align-items: center;
+  text-align: center;
 }
 .button {
   margin-top: 15px;
@@ -15,9 +16,16 @@
   line-height: 2rem;
   font-weight: 500;
   color: #f47d32;
+  text-align: center;
 }
 .iconTel {
   display: block;
+}
+@media (max-width: 1250px) {
+  .tel {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
 }
 @media (min-width: 1150px) {
   .iconTel {
@@ -25,6 +33,9 @@
   }
   .tel {
     display: block;
+  }
+  .telAndButton {
+    max-width: 40%;
   }
 }
 @media (max-width: 650px) {
@@ -42,10 +53,13 @@
   line-height: 1.5rem;
   font-weight: 500;
   color: #5c5049;
+
+  position: relative;
 }
 .cityAddress:hover {
   text-decoration: underline;
 }
+
 @media (max-width: 650px) {
   .headerMobile {
     display: flex;

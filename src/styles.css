@@ -261,3 +261,21 @@
   top: 8px;
   right: 10px;
 }
+
+@media (min-width: 1023px) {
+  .viewOnlyPc {
+    display: block;
+  }
+  .viewOnlyMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .viewOnlyMobile {
+    display: block;
+  }
+  .viewOnlyPc {
+    display: none;
+  }
+}

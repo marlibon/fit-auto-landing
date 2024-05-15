@@ -44,7 +44,21 @@ const Footer: React.FC<Props> = ({
               </li>
             </ul>
           </div>
-          <a href={'tel:' + cleanTelNumber(city.tel)} className={styles.tel}>
+          <a
+            href={'tel:' + cleanTelNumber(city.tel)}
+            className={clsx('viewOnlyPc', styles.tel)}
+          >
+            {city.tel}
+            {city.extNumber ? ' доб.' + city.extNumber : ''}
+          </a>
+          <a
+            href={
+              'tel:' +
+              cleanTelNumber(city.tel) +
+              (city.extNumber ? ',,' + city.extNumber : '')
+            }
+            className={clsx('viewOnlyMobile', styles.tel)}
+          >
             {city.tel}
           </a>
           <div className="hidden">

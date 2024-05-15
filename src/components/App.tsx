@@ -191,6 +191,7 @@ function App() {
           <div className="flex justify-between items-center">
             <h5 className="text-1xl subtitleModal">
               Пожалуйста, свяжитесь с нами по телефону {city.tel}
+              {city.extNumber ? ' доб.' + city.extNumber : ''}
             </h5>
           </div>
         </Modal>

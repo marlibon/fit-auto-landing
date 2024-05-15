@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import clsx from 'clsx';
 import phoneIcon from '../../images/phone_icon.svg';
 import logoOrange from '../../images/logo-orange.svg';
@@ -11,6 +11,26 @@ interface Props {
   setShowPopupOfficeAddress: React.Dispatch<React.SetStateAction<boolean>>;
 }
 const Header: FC<Props> = ({ city, setShowPopupOfficeAddress }) => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    let timeoutId: any;
+
+    const handleResize = () => {
+      if (timeoutId) return;
+
+      timeoutId = setTimeout(() => {
+        setIsMobile(window.innerWidth < 768);
+        timeoutId = null;
+      }, 200);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <section className="section mb-4 about lg:rounded-3xl lg:m-5 lg:mb-24">
       <nav
@@ -34,7 +54,6 @@ const Header: FC<Props> = ({ city, setShowPopupOfficeAddress }) => {
                 className="flex justify-end items-center relative"
                 onClick={() => setShowPopupOfficeAddress(true)}
               >
-                <span className="pointer-events-none icon-map-form w-[24px] h-[24px]" />
                 <span
                   className={clsx('pl-2 cursor-pointer ', styles.cityAddress)}
                 >
@@ -42,11 +61,24 @@ const Header: FC<Props> = ({ city, setShowPopupOfficeAddress }) => {
                 </span>
               </div>
             </div>
-            <a href={'tel:' + cleanTelNumber(city.tel)} className={styles.tel}>
-              {city.tel}
-            </a>
             <a
-              href={'tel:' + cleanTelNumber(city.tel)}
+              href={
+                'tel:' +
+                cleanTelNumber(city.tel) +
+                (isMobile && city.extNumber ? ',,' + city.extNumber : '')
+              }
+              className={styles.tel}
+            >
+              {city.tel}
+              {city.extNumber && !isMobile ? ' доб.' + city.extNumber : ''}
+            </a>
+            {/** для планшетов иконка телефона */}
+            <a
+              href={
+                'tel:' +
+                cleanTelNumber(city.tel) +
+                (city.extNumber ? ',,' + city.extNumber : '')
+              }
               className={styles.iconTel}
             >
               <img src={phoneIcon} alt="" />

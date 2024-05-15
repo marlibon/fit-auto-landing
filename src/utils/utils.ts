@@ -23,6 +23,9 @@ export function getEndOfNextWeek(): string {
 
   return `${day}.${month}.${year}`;
 }
-export const cleanTelNumber = (tel: string): string => {
-  return tel.replace(/\s/g, '').replace(/[()\u0028\u0029-]/g, '');
+export const cleanTelNumber = (tel: string, ext?: string): string => {
+  const telClean: string = tel
+    .replace(/\s/g, '')
+    .replace(/[()\u0028\u0029-]/g, '');
+  return telClean + (ext ? `,,${ext}` : '');
 };
