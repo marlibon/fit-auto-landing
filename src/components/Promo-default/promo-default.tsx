@@ -22,18 +22,8 @@ const PromoDefault: FC<IPromoDefault> = ({ city, onClickButtonOrder }) => {
           </div>
         </div>
         <div className={styles['promo-default__title'] + ' uppercase'}>
-          <div
-            className={styles['promo-default__title-line']}
-            style={{ textDecoration: 'underline' }}
-          >
-            Диагностика
-          </div>
-          <div
-            className="promo-default__title-line"
-            style={{ textDecoration: 'underline' }}
-          >
-            за 0 ₽
-          </div>
+          <div className={styles['promo-default__title-line']}>Диагностика</div>
+          <div className="promo-default__title-line">за 0 ₽</div>
         </div>
         <button
           className={styles['promo-default__button']}
@@ -42,12 +32,8 @@ const PromoDefault: FC<IPromoDefault> = ({ city, onClickButtonOrder }) => {
           ЗАПИСАТЬСЯ
         </button>
         <div className={styles['promo-default__description'] + ' uppercase'}>
-          <div className="promo-default__title-line">
-            <strong>Скидка на работы</strong>
-          </div>
-          <div className="promo-default__title-line">
-            <strong>по рекомендации -20%</strong>
-          </div>
+          <div className="promo-default__title-line">Скидка на работы</div>
+          <div className="promo-default__title-line">по рекомендации -20%</div>
         </div>
       </div>
       <div className={styles['promo-default__background']}></div>
